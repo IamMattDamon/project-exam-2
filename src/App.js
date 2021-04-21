@@ -12,9 +12,9 @@ import "./sass/style.scss";
 function App() {
   return (
     <>
-    <AuthProvider>
-      <Router>
-        <Navigation />
+      <AuthProvider>
+        <Router>
+          <Navigation />
           <Container>
             <Route path="/" exact component={Home}></Route>
             <Route path="/accommodation">
@@ -30,8 +30,8 @@ function App() {
               <Admin />
             </Route>
           </Container>
-      </Router>
-    </AuthProvider>
+        </Router>
+      </AuthProvider>
     </>
   );
 }
