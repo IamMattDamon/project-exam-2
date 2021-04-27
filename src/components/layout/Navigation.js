@@ -31,8 +31,8 @@ export default function Navigation() {
             <Link to="/accommodation" exact className="nav-link">
               Accommodation
             </Link>
-            <Link to="/booking" exact className="nav-link">
-              Booking
+            <Link to="/enquiry" exact className="nav-link">
+              Enquiry
             </Link>
             <Link to="/contact" exact className="nav-link">
               Contact

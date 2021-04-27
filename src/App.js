@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Navigation from "./components/layout/Navigation";
 import Home from "./components/pages/Home";
 import Accommodation from "./components/pages/Accommodation";
+import Enquiry from "./components/pages/Enquiry";
 import Contact from "./components/pages/Contact";
 import Login from "./components/pages/Login";
 import Admin from "./components/pages/Admin";
@@ -19,6 +20,9 @@ function App() {
             <Route path="/" exact component={Home}></Route>
             <Route path="/accommodation">
               <Accommodation />
+            </Route>
+            <Route path="/enquiry">
+              <Enquiry />
             </Route>
             <Route path="/contact">
               <Contact />
