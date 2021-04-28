@@ -1,6 +1,25 @@
+html,
 body {
     margin: 0;
+    height: 100%;
+}
+
+body {
     background: rgb(87,68,142);
     background: radial-gradient(circle, rgba(87,68,142,1) 0%, rgba(27,12,69,1) 100%);
     font-family: $secondary-font !important;
+}
+
+.home-header-background-image {
+    background-image: url('./../../images/bergen-city-center.jpg');
+    z-index: 1;
+    height: 400px;
+    width: 100%;
+}
+
+.content-wrapper {
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 250px;
+    min-height: 100%;
 }

@@ -3,7 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 import AuthContext from "./../../context/AuthContext";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "./../../images/holidaze_logo_darkgbg.png";
+import logo from "./../../images/holidaze_logo_darkbg.png";
 
 export default function Navigation() {
   const [auth, setAuth] = useContext(AuthContext);
@@ -19,9 +19,9 @@ export default function Navigation() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <div className="container-fluid">
-        <NavBar.Brand>
-          <img src={logo} alt="holidaze logo" className="nav__logo" />
-        </NavBar.Brand>
+        <Navbar.Brand>
+          <img src={logo} alt="holidaze logo" className="nav-logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav classname="mr-auto">

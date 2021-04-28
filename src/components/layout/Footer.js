@@ -15,22 +15,22 @@ export default function Footer() {
               <ul className="footer-link-ul">
                 <li className="footer-link-li">
                   <div className="footer-link-content">
-                    <a href="#">About</a>
+                    <a href="#.">About</a>
                   </div>
                 </li>
                 <li className="footer-link-li">
                   <div className="footer-link-content">
-                    <a href="#">Careers</a>
+                    <a href="#.">Careers</a>
                   </div>
                 </li>
                 <li className="footer-link-li">
                   <div className="footer-link-content">
-                    <a href="#">Sustainability</a>
+                    <a href="#.">Sustainability</a>
                   </div>
                 </li>
                 <li className="footer-link-li">
                   <div className="footer-link-content">
-                    <a href="#">Affiliate Info</a>
+                    <a href="#.">Affiliate Info</a>
                   </div>
                 </li>
               </ul>
@@ -45,12 +45,12 @@ export default function Footer() {
               <ul className="footer-link-ul">
                 <li className="footer-link-li">
                   <div className="footer-li-content">
-                    <a href="#">Contact Admin</a>
+                    <a href="#.">Contact Admin</a>
                   </div>
                 </li>
                 <li className="footer-link-li">
                   <div className="footer-li-content">
-                    <a href="#">Help/FAQ</a>
+                    <a href="#.">Help/FAQ</a>
                   </div>
                 </li>
               </ul>
@@ -65,12 +65,12 @@ export default function Footer() {
               <ul className="footer-link-ul">
                 <li className="footer-link-li">
                   <div className="footer-li-content">
-                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#.">Terms &amp; Conditions</a>
                   </div>
                 </li>
                 <li className="footer-link-li">
                   <div className="footer-li-content">
-                    <a href="#">Privacy Policy</a>
+                    <a href="#.">Privacy Policy</a>
                   </div>
                 </li>
               </ul>
@@ -106,7 +106,7 @@ export default function Footer() {
       </Container>
       <div className="footer-copyright-container">
         <h6 className="footer-copyright">
-          &#169;Copyright &#64;Holidaze 2021 | A project exam at Noroff by Frode
+          Copyright &#169;Holidaze 2021 | A project exam at Noroff by Frode
           Karlsen
         </h6>
       </div>
