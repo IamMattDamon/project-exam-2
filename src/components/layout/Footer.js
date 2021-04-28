@@ -86,16 +86,16 @@ export default function Footer() {
                 <li className="footer-link-li">
                   <div className="footer-li-content">
                     <span>
-                      <FaFacebookSquare />
+                      <FaFacebookSquare className="footer-icons" />
                     </span>
                     <span>
-                      <FaInstagramSquare />
+                      <FaInstagramSquare className="footer-icons" />
                     </span>
                     <span>
-                      <FaPinterestSquare />
+                      <FaPinterestSquare className="footer-icons" />
                     </span>
                     <span>
-                      <FaTwitterSquare />
+                      <FaTwitterSquare className="footer-icons" />
                     </span>
                   </div>
                 </li>
