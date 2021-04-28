@@ -104,6 +104,12 @@ export default function Footer() {
           </div>
         </Row>
       </Container>
+      <div className="footer-copyright-container">
+        <h6 className="footer-copyright">
+          &#169;Copyright &#64;Holidaze 2021 | A project exam at Noroff by Frode
+          Karlsen
+        </h6>
+      </div>
     </footer>
   );
 }
