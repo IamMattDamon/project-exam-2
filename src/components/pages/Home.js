@@ -5,7 +5,6 @@ export default function Home() {
     return (
       <>
         <div className="content-wrapper">
-          <div className="header-image-overlay">
             <div
               className="home-header-background-image"
               role="img"
@@ -17,7 +16,6 @@ export default function Home() {
                 </div>
               </Container>
             </div>
-          </div>
           <Container>
             <div className="section-header">
               <h2>Featured Accommodations</h2>
