@@ -24,12 +24,12 @@ export default function Navigation() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav classname="mr-auto">
+          <Nav className="mr-auto">
             <Link to="/" exact className="nav-link">
               Home
             </Link>
-            <Link to="/accommodation" exact className="nav-link">
-              Accommodation
+            <Link to="/accommodations" exact className="nav-link">
+              Accommodations
             </Link>
             <Link to="/enquiry" exact className="nav-link">
               Enquiry

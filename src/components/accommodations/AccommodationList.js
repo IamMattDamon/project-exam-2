@@ -14,8 +14,8 @@ function AccommodationList() {
 
         if (response.ok) {
           const json = await response.json();
-          console.log(json);
-          setAccommodations(json.data);
+          console.log(json[0]);
+          setAccommodations(json[0].data);
         } else {
           setError("An error ocurred");
         }

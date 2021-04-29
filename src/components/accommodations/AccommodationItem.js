@@ -18,11 +18,9 @@ function AccommodationItem({
   return (
     <div className="mt-4">
       <Card className="accommodation-card">
-        <img
-          className="accommodation-card-image"
-          src={image}
-          alt="accommodation image"
-        />
+        <img className="accommodation-card-image" alt="accommodation image">
+          {image}
+        </img>
         <Card.Body className="d-flex justify-content-center">
           <Card.Title className="mb-1">
             <h2 className="accommodation-title">{name}</h2>
@@ -39,7 +37,9 @@ function AccommodationItem({
           <li className="list-group-item text-center">
             {bathrooms}&nbsp;Bathrooms
           </li>
-          <li className="list-group-item text-center">Size:&nbsp;{size}&nbsp;&#13217;</li>
+          <li className="list-group-item text-center">
+            Size:&nbsp;{size}&nbsp;&#13217;
+          </li>
           <li className="list-group-item text-center">{feature_one}</li>
           <li className="list-group-item text-center">{feature_two}</li>
           <li className="list-group-item text-center">{feature_three}</li>

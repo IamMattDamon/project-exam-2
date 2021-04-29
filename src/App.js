@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navigation from "./components/layout/Navigation";
 import Footer from "./components/layout/Footer";
 import Home from "./components/pages/Home";
-import Accommodation from "./components/pages/Accommodation";
+import AccommodationDetail from "./components/accommodations/AccommodationDetail";
 import Enquiry from "./components/pages/Enquiry";
 import Contact from "./components/pages/Contact";
 import Login from "./components/pages/Login";
@@ -18,10 +18,7 @@ function App() {
           <Navigation />
             <Switch>
               <Route path="/" exact component={Home}></Route>
-              <Route path="/accommodation">
-                <Accommodation />
-              </Route>
-              <Route path="/detail/:param">
+              <Route path="/accommodations/:id">
                 <AccommodationDetail />
               </Route>
               <Route path="/enquiry">

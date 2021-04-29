@@ -7,18 +7,18 @@ import { BiChevronLeftCircle } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 function AccommodationDetail() {
-  const [accommodation, setAccommodation] = useState(null);
+  const [accommodations, setAccommodations] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   let history = useHistory();
-  const { param } = useParams();
+  const { id } = useParams();
 
-  if (!param) {
+  if (!id) {
     history.push("/");
   }
 
-  const url = BASE_URL + "/" + param;
+  const url = BASE_URL + "/accommodations/" + id;
 
   useEffect(
     function () {
@@ -28,8 +28,8 @@ function AccommodationDetail() {
 
           if (response.ok) {
             const json = await response.json();
-            console.log(json);
-            setAccommodation(json);
+            console.log(json[0]);
+            setAccommodations(json[0]);
           } else {
             setError("An error occurred");
           }
@@ -58,44 +58,44 @@ function AccommodationDetail() {
         <div className="row">
           <Card className="accommodation-detail-cards">
             <div className="col">
-              <img
+              <div
                 className="accommodation-card-image"
-                src={accommodation.image}
-                alt="accommodation image"
-              />
+              >
+                {accommodations.image}
+              </div>
               <div className="accommodation-detail-description">
-                <p className="card-text">{accommodation.description}</p>
+                <p className="card-text">{accommodations.description}</p>
               </div>
             </div>
             <div className="col">
               <Card.Body className="d-flex justify-content-center">
                 <Card.Title className="mb-1 text-center">
-                  <h2 className="accommodation-title">{accommodation.name}</h2>
+                  <h2 className="accommodation-title">{accommodations.name}</h2>
                 </Card.Title>
                 <Card.Subtitle className="mt-1">
                   <h3 className="accommodation-subtitle">
-                    {accommodation.type}
+                    {accommodations.type}
                   </h3>
                 </Card.Subtitle>
               </Card.Body>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item text-center">
-                  {accommodation.bedrooms}&nbsp;Bedrooms
+                  {accommodations.bedrooms}&nbsp;Bedrooms
                 </li>
                 <li className="list-group-item text-center">
-                  {accommodation.bathrooms}&nbsp;Bathrooms
+                  {accommodations.bathrooms}&nbsp;Bathrooms
                 </li>
                 <li className="list-group-item text-center">
-                  Size:&nbsp;{accommodation.size}&nbsp;&#13217;
+                  Size:&nbsp;{accommodations.size}&nbsp;&#13217;
                 </li>
                 <li className="list-group-item text-center">
-                  {accommodation.feature_one}
+                  {accommodations.feature_one}
                 </li>
                 <li className="list-group-item text-center">
-                  {accommodation.feature_two}
+                  {accommodations.feature_two}
                 </li>
                 <li className="list-group-item text-center">
-                  {accommodation.feature_three}
+                  {accommodations.feature_three}
                 </li>
               </ul>
               <Link to={`/enquiry`}>
