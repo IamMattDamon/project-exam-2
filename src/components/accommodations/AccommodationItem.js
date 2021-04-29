@@ -17,11 +17,11 @@ function AccommodationItem({
 }) {
   return (
     <div className="mt-4">
-      <Card className="accommodation-card">
-        <img className="accommodation-card-image" alt="accommodation image">
-          {image}
-        </img>
-        <Card.Body className="d-flex justify-content-center">
+      <Card className="accommodation-card mr-4 mb-4">
+        <div className="text-center">
+        <img src={image[0].url} alt={image[0].name} className="accommodation-card-image" />
+        </div>
+        <Card.Body className="d-flex flex-column justify-content-center">
           <Card.Title className="mb-1">
             <h2 className="accommodation-title">{name}</h2>
           </Card.Title>
@@ -44,8 +44,8 @@ function AccommodationItem({
           <li className="list-group-item text-center">{feature_two}</li>
           <li className="list-group-item text-center">{feature_three}</li>
         </ul>
-        <Link to={`detail/${id}`}>
-          <button className="btn-lg btn btn-cta text-center">
+        <Link to={`id/${id}`} className="text-center">
+          <button className="btn-lg btn btn-cta">
             More details
           </button>
         </Link>
@@ -54,12 +54,12 @@ function AccommodationItem({
   );
 }
 
-AccommodationItem.PropTypes = {
+AccommodationItem.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.array.isRequired,
   bathrooms: PropTypes.number.isRequired,
   bedrooms: PropTypes.number.isRequired,
   feature_one: PropTypes.string.isRequired,

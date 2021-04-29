@@ -19,6 +19,14 @@ body {
     width: 100%;
 }
 
+.accommodations-header-background-image {
+    background-image:
+    linear-gradient(to bottom, rgba(46, 22, 119, 0.5), rgba(46, 22, 119, 0.5)),
+    url("./../../images/bergen-ambience.jpg");
+    height: 400px;
+    width: 100%;
+}
+
 .content-wrapper {
     box-sizing: border-box;
     position: relative;

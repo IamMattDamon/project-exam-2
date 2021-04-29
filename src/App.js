@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navigation from "./components/layout/Navigation";
-import Footer from "./components/layout/Footer";
 import Home from "./components/pages/Home";
+import Accommodations from "./components/pages/Accommodations";
 import AccommodationDetail from "./components/accommodations/AccommodationDetail";
 import Enquiry from "./components/pages/Enquiry";
 import Contact from "./components/pages/Contact";
@@ -18,6 +18,9 @@ function App() {
           <Navigation />
             <Switch>
               <Route path="/" exact component={Home}></Route>
+              <Route path="/accommodations">
+                <Accommodations />
+              </Route>
               <Route path="/accommodations/:id">
                 <AccommodationDetail />
               </Route>
@@ -36,7 +39,6 @@ function App() {
             </Switch>
         </Router>
       </AuthProvider>
-      <Footer className="mt-5"/>
     </>
   );
 }

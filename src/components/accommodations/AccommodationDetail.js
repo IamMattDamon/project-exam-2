@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { BASE_URL } from "./../../constants/api";
+import { ACCOMMODATION_URL } from "./../../constants/api";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { BiChevronLeftCircle } from "react-icons/bi";
@@ -18,7 +18,7 @@ function AccommodationDetail() {
     history.push("/");
   }
 
-  const url = BASE_URL + "/accommodations/" + id;
+  const url = ACCOMMODATION_URL + "/" + id;
 
   useEffect(
     function () {
@@ -28,8 +28,8 @@ function AccommodationDetail() {
 
           if (response.ok) {
             const json = await response.json();
-            console.log(json[0]);
-            setAccommodations(json[0]);
+            console.log(json);
+            setAccommodations(json);
           } else {
             setError("An error occurred");
           }

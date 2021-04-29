@@ -1,5 +1,6 @@
 import Heading from "./../layout/Heading";
 import Container from "react-bootstrap/Container";
+import Footer from "./../layout/Footer";
 
 export default function Home() {
     return (
@@ -28,6 +29,7 @@ export default function Home() {
             </div>
           </Container>
         </div>
+        <Footer />
       </>
     );
 }
