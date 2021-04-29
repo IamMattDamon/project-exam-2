@@ -21,6 +21,9 @@ function App() {
               <Route path="/accommodation">
                 <Accommodation />
               </Route>
+              <Route path="/detail/:param">
+                <AccommodationDetail />
+              </Route>
               <Route path="/enquiry">
                 <Enquiry />
               </Route>
