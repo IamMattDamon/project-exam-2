@@ -12,17 +12,16 @@ export default function Accommodations() {
               role="img"
               aria-label="houses sea side in Bergen"
             >
-              <Container>
-                <div className="home-heading">
-                  <Heading title="Accommodation in Bergen" />
+              <Container className="accommodations-content-container">
+                <div className="accommodations-heading">
+                  <Heading title="Accommodation in Bergen" className="font-family-primary font-color-white" />
+                </div>
+                <div className="accommodations-subheading">
+                    <h2 className="font-family-secondary font-color-white">Find the right spot for you and yours</h2>
                 </div>
               </Container>
             </div>
-            <Container>
-            <div className="section-header">
-              <h2>Find Accommodations</h2>
-            </div>
-            </Container>
+
             <AccommodationList />
 
             </div>

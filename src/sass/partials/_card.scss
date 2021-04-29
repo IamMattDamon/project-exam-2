@@ -5,4 +5,49 @@
 
 .accommodation-card {
     width: 300px;
+    box-shadow: 2px 4px 8px $fuchsia-shade3;
+}
+
+.accommodation-title {
+    font-size: 24px;
+    font-family: $primary-font;
+    font-weight: 700;
+}
+
+.accommodation-subtitle {
+    font-size: 20px;
+    font-family: $primary-font;
+    font-weight: 700;
+}
+
+.list-group-item {
+    font-size: 16px;
+    font-family: $secondary-font;
+}
+
+.accommodation-background-fuchsia {
+    background-color: $primary-fuchsia;
+}
+
+.accommodation-detail-btn {
+    background-color: $primary-cerise;
+    color: $white-color;
+    font-size: 16px;
+    width: 100%;
+}
+
+.accommodation-detail-btn:hover {
+    background-color: $cerise-shade1;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    color: $white-color;
+}
+
+.dark-bg {
+    background-color: $fuchsia-black-color;
+    color: $white-color;
+}
+
+.card {
+    background-color: unset;
 }
