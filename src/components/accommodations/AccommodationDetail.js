@@ -84,7 +84,7 @@ function AccommodationDetail() {
                 <div className="col-md-6 col-sm-12">
                   <div className="accommodation-detail-img-container">
                     <img
-                      src={accommodation.image[0]}
+                      src={accommodation.image[0].url}
                       alt={accommodation.image[0].name}
                       className="accommodation-detail-image"
                     />

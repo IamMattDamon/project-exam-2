@@ -18,7 +18,7 @@ function App() {
           <Navigation />
             <Switch>
               <Route path="/" exact component={Home}></Route>
-              <Route path="/accommodations">
+              <Route exact path="/accommodations">
                 <Accommodations />
               </Route>
               <Route path="/accommodations/:id">

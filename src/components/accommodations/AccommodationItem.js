@@ -37,7 +37,7 @@ function AccommodationItem({
             Size:&nbsp;{size}&nbsp;&#13217;
           </li>
         </ul>
-        <Link to={`id/${id}`} className="text-center">
+        <Link to={`/accommodations/${id}`} className="text-center">
           <button className="btn-lg btn accommodation-detail-btn">
             More details
           </button>
