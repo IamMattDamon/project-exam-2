@@ -81,7 +81,7 @@ function AccommodationDetail() {
           <Container className="accommodation-detail-container">
               <Card className="accommodation-detail-card">
               <Row className="p-4">
-                <div className="col-md-6 col-sm-12 mt-2 d-flex flex-column justify-content-center">
+                <div className="col mt-2 d-flex flex-column justify-content-center">
                   <div className="accommodation-detail-img-container">
                     <img
                       src={accommodation.image[0].url}
@@ -93,7 +93,7 @@ function AccommodationDetail() {
                     <p className="card-text font-color-dark font-family-secondary p-3">{accommodation.description}</p>
                   </div>
                 </div>
-                <div className="col-md-6 col-sm-12">
+                <div className="col">
                   <Card.Body className="d-flex flex-column justify-content-center accommodation-detail-body mt-2">
                     <Card.Title className="mb-1 text-center d-flex">
                       <h2 className="accommodation-detail-title">
