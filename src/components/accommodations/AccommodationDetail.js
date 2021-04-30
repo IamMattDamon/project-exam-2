@@ -7,6 +7,7 @@ import { BiChevronLeftCircle } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import Footer from "./../layout/Footer";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import Heading from "./../layout/Heading";
 
 function AccommodationDetail() {
@@ -77,12 +78,11 @@ function AccommodationDetail() {
             </div>
           </Container>
         </div>
-        <div className="mt-5 accommodation-detail">
-          <div className="container">
-            <div className="row">
+          <Container>
+            <Row>
               <Card className="accommodation-detail-cards">
-                <div className="col">
-                  <div className="accommodation-card-image">
+                <div className="col-md-6 col-sm-12">
+                  <div className="accommodation-detail-img-container">
                     <img
                       src={accommodation.image[0]}
                       alt={accommodation.image[0].name}
@@ -93,7 +93,7 @@ function AccommodationDetail() {
                     <p className="card-text">{accommodation.description}</p>
                   </div>
                 </div>
-                <div className="col">
+                <div className="col-md-6 col-sm-12">
                   <Card.Body className="d-flex justify-content-center">
                     <Card.Title className="mb-1 text-center">
                       <h2 className="accommodation-title">
@@ -139,9 +139,8 @@ function AccommodationDetail() {
                   </div>
                 </div>
               </Card>
-            </div>
-          </div>
-        </div>
+            </Row>
+        </Container>
       </div>
       <Footer />
     </>
