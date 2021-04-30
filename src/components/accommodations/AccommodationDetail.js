@@ -78,10 +78,10 @@ function AccommodationDetail() {
             </div>
           </Container>
         </div>
-          <Container>
-            <Row>
-              <Card className="accommodation-detail-cards">
-                <div className="col-md-6 col-sm-12">
+          <Container className="accommodation-detail-container">
+              <Card className="accommodation-detail-card">
+              <Row className="p-4">
+                <div className="col-md-6 col-sm-12 mt-2 d-flex flex-column justify-content-center">
                   <div className="accommodation-detail-img-container">
                     <img
                       src={accommodation.image[0].url}
@@ -90,18 +90,18 @@ function AccommodationDetail() {
                     />
                   </div>
                   <div className="accommodation-detail-description">
-                    <p className="card-text">{accommodation.description}</p>
+                    <p className="card-text font-color-dark font-family-secondary p-3">{accommodation.description}</p>
                   </div>
                 </div>
                 <div className="col-md-6 col-sm-12">
-                  <Card.Body className="d-flex justify-content-center">
-                    <Card.Title className="mb-1 text-center">
-                      <h2 className="accommodation-title">
+                  <Card.Body className="d-flex flex-column justify-content-center accommodation-detail-body mt-2">
+                    <Card.Title className="mb-1 text-center d-flex">
+                      <h2 className="accommodation-detail-title">
                         {accommodation.name}
                       </h2>
                     </Card.Title>
-                    <Card.Subtitle className="mt-1">
-                      <h3 className="accommodation-subtitle">
+                    <Card.Subtitle>
+                      <h3 className="accommodation-detail-subtitle">
                         {accommodation.type}
                       </h3>
                     </Card.Subtitle>
@@ -138,8 +138,8 @@ function AccommodationDetail() {
                     </Link>
                   </div>
                 </div>
+                </Row>
               </Card>
-            </Row>
         </Container>
       </div>
       <Footer />

@@ -51,3 +51,31 @@
 .card {
     background-color: unset;
 }
+
+.accommodation-detail-image {
+    width: 500px;
+    height: auto;
+}
+
+.accommodation-detail-description {
+    width: 500px;
+}
+
+.accommodation-detail-container {
+    margin-top: 50px;
+}
+
+.accommodation-detail-card {
+    background: $fuchsia-shade2 !important;
+    border-radius: 10px;
+}
+
+.accommodation-detail-title,
+.accommodation-detail-subtitle {
+    color: $white-color;
+    font-family: $primary-font;
+}
+
+.accommodation-detail-body {
+    background-color: $fuchsia-black-color;
+}
