@@ -52,6 +52,10 @@
     background-color: unset;
 }
 
+.card-body {
+    padding: 0.75rem;
+}
+
 .accommodation-detail-image {
     width: 500px;
     height: auto;
@@ -78,4 +82,8 @@
 
 .accommodation-detail-body {
     background-color: $fuchsia-black-color;
+}
+
+.list-group-item {
+    padding: .5rem 1rem;
 }

@@ -15,6 +15,7 @@ export default function Home() {
           <Container>
             <div className="home-heading">
               <Heading title="Accommodation in Bergen" />
+              <h2 className="home-subheading">Get the best deals on accommodation in Bergen</h2>
             </div>
           </Container>
         </div>
@@ -22,18 +23,18 @@ export default function Home() {
           <main>
             <section className="mt-5">
               <div className="home-content-container">
-                <h2 className="content-header">Featured Accommodations</h2>
+                <h2 className="content-header mb-3">Featured Accommodations</h2>
                 <FeaturedList />
               </div>
             </section>
             <section>
               <div className="home-content-container">
-                <h2 className="content-header">Explore Bergen</h2>
+                <h2 className="content-header mt-5 mb-3">Explore Bergen</h2>
               </div>
             </section>
             <section>
               <div className="home-content-container">
-                <h2 className="content-header">Public Transport</h2>
+                <h2 className="content-header mt-3">Public Transport</h2>
               </div>
             </section>
           </main>
