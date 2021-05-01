@@ -17,7 +17,7 @@ function ActivitiesItem({ id, name, description, image }) {
               <Carousel.Item className="active">
                 <Container>
                     <Col md={4}>
-                      <Card>
+                      <Card className="activities-carousel-card">
                         <div className="activities-image-container">
                           <img
                             src={image.url}
