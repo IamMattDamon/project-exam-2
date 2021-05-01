@@ -43,6 +43,7 @@ function AccommodationItem({
           </button>
         </Link>
       </Card>
+
     </div>
   );
 }

@@ -18,7 +18,7 @@ function AccommodationList() {
           console.log(json);
           setAccommodations(json);
         } else {
-          setError("An error has ocurred");
+          setError("An error has occurred");
         }
       } catch (error) {
         setError(error.toString());
@@ -30,11 +30,11 @@ function AccommodationList() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="container font-color-white font-family-secondary">Loading...</div>;
   }
 
   if (error) {
-    return <div>An error has occurred: {error}</div>;
+    return <div className="container font-color-white font-family-secondary">An error has occurred: {error}</div>;
   }
 
   return (
@@ -54,6 +54,7 @@ function AccommodationList() {
             bedrooms,
             size,
             image,
+            featured,
             feature_one,
             feature_two,
             feature_three,
@@ -69,6 +70,7 @@ function AccommodationList() {
               bedrooms={bedrooms}
               size={size}
               image={image}
+              featured={featured}
               feature_one={feature_one}
               feature_two={feature_two}
               feature_three={feature_three}

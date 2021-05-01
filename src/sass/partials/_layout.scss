@@ -1,6 +1,9 @@
 html,
 body {
+    height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -15,7 +18,18 @@ body {
     linear-gradient(to bottom, rgba(46, 22, 119, 0.5),rgba(46, 22, 119, 0.5)),
     url("./../../images/bergen-city-center.jpg");
     height: 400px;
-    width: 100%;
+    width: auto;
+    background-position: center;
+    
+}
+
+@media screen and (min-width: 1920px) {
+    .home-header-background-image {
+        background-size: cover;
+    }
+    .accommodations-header-background-image {
+        background-size: cover;
+    }
 }
 
 .accommodations-header-background-image {
@@ -23,13 +37,14 @@ body {
     linear-gradient(to bottom, rgba(46, 22, 119, 0.5), rgba(46, 22, 119, 0.5)),
     url("./../../images/bergen-ambience.jpg");
     height: 400px;
-    width: 100%;
+    width: auto;
+    background-position: center;
 }
 
 .content-wrapper {
     box-sizing: border-box;
     position: relative;
-    padding-bottom: 250px;
+    padding-bottom: 25px;
     min-height: 100%;
 }
 

@@ -23,7 +23,7 @@ export default function Accommodations() {
             </div>
 
             <AccommodationList />
-
+            
             </div>
             <Footer />
         </>
