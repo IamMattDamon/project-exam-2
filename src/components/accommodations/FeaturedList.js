@@ -73,8 +73,8 @@ function FeaturedList() {
                   feature_two={feature_two}
                   feature_three={feature_three}
                 />
-              )};
-            })}
+              );
+          }})}
         
           </div>
           </Container>

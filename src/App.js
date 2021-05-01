@@ -3,6 +3,7 @@ import Navigation from "./components/layout/Navigation";
 import Home from "./components/pages/Home";
 import Accommodations from "./components/pages/Accommodations";
 import AccommodationDetail from "./components/accommodations/AccommodationDetail";
+import ActivitiesDetail from "./components/activities/ActivitiesDetail";
 import Enquiry from "./components/pages/Enquiry";
 import Contact from "./components/pages/Contact";
 import Login from "./components/pages/Login";
@@ -23,6 +24,9 @@ function App() {
               </Route>
               <Route path="/accommodations/:id">
                 <AccommodationDetail />
+              </Route>
+              <Route path="/activities/:id">
+                <ActivitiesDetail />
               </Route>
               <Route path="/enquiry">
                 <Enquiry />

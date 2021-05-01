@@ -1,4 +1,5 @@
-.accommodation-card-image {
+.accommodation-card-image,
+.activities-card-image {
     width: 300px;
     height: auto;
 }
@@ -6,6 +7,10 @@
 .accommodation-card {
     width: 300px;
     box-shadow: 2px 4px 8px $fuchsia-shade3;
+}
+
+.activities-carousel-card {
+    width: 300px;
 }
 
 .accommodation-title {

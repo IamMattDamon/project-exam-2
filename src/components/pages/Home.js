@@ -2,6 +2,7 @@ import Heading from "./../layout/Heading";
 import Container from "react-bootstrap/Container";
 import Footer from "./../layout/Footer";
 import FeaturedList from "./../accommodations/FeaturedList";
+import ActivitiesList from "./../activities/ActivitiesList";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
             <section>
               <div className="home-content-container">
                 <h2 className="content-header mt-5 mb-3">Explore Bergen</h2>
+                <ActivitiesList />
               </div>
             </section>
             <section>

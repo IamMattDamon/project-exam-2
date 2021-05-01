@@ -49,11 +49,11 @@ function AccommodationDetail() {
   );
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="container font-color-white font-family-secondary">Loading...</div>;
   }
 
   if (error) {
-    return <div>An error occurred: {error}</div>;
+    return <div className="container font-color-white font-family-secondary">An error occurred: {error}</div>;
   }
 
   return (
