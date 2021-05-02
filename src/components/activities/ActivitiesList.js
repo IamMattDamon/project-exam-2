@@ -49,13 +49,14 @@ function ActivitiesList() {
       <Container>
         <div className="accommodations-list d-flex flex-wrap justify-content-center">
           {activities.map(function (activities) {
-            const { id, name, description, image } = activities;
+            const { id, name, description_short, description_long, image } = activities;
             return (
               <ActivitiesItem
                 key={id}
                 id={id}
                 name={name}
-                description={description}
+                description_short={description_short}
+                description_long={description_long}
                 image={image}
               />
             );

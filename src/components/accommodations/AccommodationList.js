@@ -39,7 +39,6 @@ function AccommodationList() {
 
   return (
     <>
-    <Container>
     <div className="section-header mt-5">
       <h2 className="font-color-white font-family-primary text-center">Find Accommodations</h2>
     </div>
@@ -78,7 +77,6 @@ function AccommodationList() {
           );
         })}
       </div>
-      </Container>
       </>
   );
 }

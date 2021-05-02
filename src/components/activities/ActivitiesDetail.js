@@ -92,8 +92,8 @@ function ActivitiesDetail() {
               <div className="col mt-2 d-flex flex-column justify-content-center">
                 <div className="activities-detail-img-container">
                   <img
-                    src={activities.image[0].url}
-                    alt={activities.image[0].name}
+                    src={activities.image.url}
+                    alt={activities.image.name}
                     className="activities-detail-image"
                   />
                 </div>
