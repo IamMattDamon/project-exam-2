@@ -50,6 +50,9 @@
     background-color: $primary-fuchsia;
 }
 
+.accommodation-detail-description {
+    background-color: $white-color;
+}
 
 .dark-bg {
     background-color: $fuchsia-black-color;
@@ -62,6 +65,11 @@
 
 .card-body {
     padding: 0.75rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
 }
 
 .accommodation-detail-image {

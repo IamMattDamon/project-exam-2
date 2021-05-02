@@ -13,7 +13,7 @@ export default function Home() {
         role="img"
         aria-label="bryggen in bergen city center"
       >
-        <Container>
+        <Container className="home-heading-container">
           <div className="home-heading">
             <Heading title="Accommodation in Bergen" />
             <h2 className="home-subheading">
@@ -26,19 +26,22 @@ export default function Home() {
         <main>
           <section className="mt-5">
             <div className="home-content-container">
-              <h2 className="content-header mb-3">Featured Accommodations</h2>
+              <h2 className="content-heading mb-3 text-center">Featured Accommodations</h2>
+              <h3 className="content-subheading text-center">Our recommendations of places to stay in Bergen</h3>
               <FeaturedList />
             </div>
           </section>
           <section>
             <div className="home-content-container">
-              <h2 className="content-header mt-5 mb-3">Explore Bergen</h2>
+              <h2 className="content-heading mt-5 mb-3 text-center">Explore Bergen</h2>
+              <h3 className="content-subheading text-center">Places to see and explore during your stay in Bergen</h3>
               <ActivitiesList />
             </div>
           </section>
           <section>
             <div className="home-content-container">
-              <h2 className="content-header mt-3">Public Transport</h2>
+              <h2 className="content-heading mt-5 text-center">Public Transport</h2>
+              <h3 className="content-subheading text-center">Links to details for public transport in Bergen city</h3>
             </div>
           </section>
         </main>

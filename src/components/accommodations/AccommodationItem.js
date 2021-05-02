@@ -20,10 +20,10 @@ function AccommodationItem({
         </div>
         <Card.Body className="d-flex flex-column justify-content-center dark-bg">
           <Card.Title>
-            <h3 className="accommodation-title text-center">{name}</h3>
+            <h5 className="accommodation-title text-center">{name}</h5>
           </Card.Title>
           <Card.Subtitle>
-            <h4 className="accommodation-subtitle text-center">{type}</h4>
+            <h6 className="accommodation-subtitle text-center">{type}</h6>
           </Card.Subtitle>
         </Card.Body>
         <ul className="list-group list-group-flush">

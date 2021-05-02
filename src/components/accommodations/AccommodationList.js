@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import AccommodationItem from "./AccommodationItem";
 import { ACCOMMODATION_URL } from "./../../constants/api";
-import Container from "react-bootstrap/Container";
 
 function AccommodationList() {
   const [accommodations, setAccommodations] = useState([]);

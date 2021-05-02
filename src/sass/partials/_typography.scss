@@ -14,7 +14,7 @@
     font-family: $secondary-font;
 }
 
-.content-header {
+.content-heading {
     font-family: $primary-font;
     color: $white-color;
     font-size: 40px;
@@ -23,5 +23,11 @@
 .home-subheading {
     font-family: $secondary-font;
     color: $white-color;
+    font-size: 24px;
+}
+
+.content-subheading {
+    font-family: $secondary-font;
+    color: $silver-color;
     font-size: 24px;
 }
