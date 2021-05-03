@@ -4,3 +4,37 @@ footer {
     width: 100%;
     margin-top: auto;
 }
+
+ul.footer-link-ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.footer-link-a,
+.footer-icons,
+.footer-copyright-text {
+    color: $silver-color;
+}
+
+.footer-link-content a:hover {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    color: $primary-jaffa !important;
+}
+
+.footer-icons {
+    font-size: 18px;
+}
+
+.footer-icons:hover {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    color: $primary-jaffa !important;
+    cursor: pointer;
+}
+
+.footer-title {
+    color: $silver-color;
+    font-family: $primary-font;
+    font-weight: 700;
+}
