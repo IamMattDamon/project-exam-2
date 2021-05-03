@@ -15,9 +15,9 @@ export default function Home() {
       >
         <Container className="home-heading-container">
           <div className="home-heading">
-            <Heading title="Accommodation in Bergen" />
+            <Heading title="Holidaze in Bergen" />
             <h2 className="home-subheading">
-              Get the best deals on accommodation in Bergen
+              Get the best deals on accommodation
             </h2>
           </div>
         </Container>

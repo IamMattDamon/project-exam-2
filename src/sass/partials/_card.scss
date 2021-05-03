@@ -25,7 +25,6 @@
     font-weight: 700;
 }
 
-
 .activities-card-body {
     background-color: $fuchsia-tint3;    
 }
@@ -50,7 +49,8 @@
     background-color: $primary-fuchsia;
 }
 
-.accommodation-detail-description {
+.accommodation-detail-description,
+.activities-detail-description {
     background-color: $white-color;
 }
 
@@ -72,20 +72,25 @@
     margin-top: 0.25rem;
 }
 
-.accommodation-detail-image {
+.accommodation-detail-image,
+.activities-detail-image {
     width: 500px;
     height: auto;
 }
 
-.accommodation-detail-description {
+.accommodation-detail-description,
+.activities-detail-description {
     width: 500px;
 }
 
-.accommodation-detail-container {
+.accommodation-detail-container,
+.activities-detail-card {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.accommodation-detail-card {
+.accommodation-detail-card,
+.activities-detail-card {
     background: $fuchsia-shade2 !important;
     border-radius: 10px;
 }

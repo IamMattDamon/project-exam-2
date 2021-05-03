@@ -73,15 +73,10 @@ function ActivitiesDetail() {
         >
           <Container className="activities-detail-container">
             <div className="activities-heading">
-              <Heading
-                title={activities.name}
-                className="font-family-primary font-color-white"
-              />
-            </div>
-            <div className="activities-subheading">
-              <h2 className="font-family-secondary font-color-white">
-                More information about the {activities.name}
-              </h2>
+              <Heading title={activities.name} />
+              <h3 className="activities-subheading">
+                More information about {activities.name}
+              </h3>
             </div>
           </Container>
         </div>
@@ -99,15 +94,18 @@ function ActivitiesDetail() {
                 </div>
                 <div className="activities-detail-description">
                   <p className="card-text font-color-dark font-family-secondary p-3">
-                    {activities.description}
+                    {activities.description_short}
                   </p>
                 </div>
               </div>
               <div className="col">
-                <Card.Body className="d-flex flex-column justify-content-center activities-detail-body mt-2">
+                <Card.Body className="d-flex flex-column justify-content-center activities-detail-body">
                   <Card.Title className="mb-1 text-center d-flex">
-                    <h2 className="activities-detail-title">{activities.name}</h2>
+                    <h3 className="activities-detail-title">{activities.name}</h3>
                   </Card.Title>
+                  <Card.Text>
+                    <p className="activities-detail-text">{activities.description_long}</p>
+                  </Card.Text>
                 </Card.Body>
                 <div className="back-to-link">
                   <Link to={`/`}>

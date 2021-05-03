@@ -64,17 +64,12 @@ function AccommodationDetail() {
           role="img"
           aria-label="houses sea side in Bergen"
         >
-          <Container className="accommodations-content-container">
-            <div className="accommodations-heading">
-              <Heading
-                title="Accommodation Details"
-                className="font-family-primary font-color-white"
-              />
-            </div>
-            <div className="accommodations-subheading">
-              <h2 className="font-family-secondary font-color-white">
+          <Container className="accommodations-detail-container">
+            <div className="accommodations-detail-heading">
+              <Heading title="Accommodation Details" />
+              <h3 className="accommodations-subheading">
                 Details about your accommodation in Bergen
-              </h2>
+              </h3>
             </div>
           </Container>
         </div>
@@ -95,13 +90,13 @@ function AccommodationDetail() {
                 </div>
                 <div className="col">
                   <Card.Body className="d-flex flex-column justify-content-center accommodation-detail-body mt-2">
-                    <Card.Title className="mb-1 text-center d-flex">
-                      <h2 className="accommodation-detail-title">
+                    <Card.Title className="mb-1">
+                      <h2 className="accommodation-detail-title text-center">
                         {accommodation.name}
                       </h2>
                     </Card.Title>
                     <Card.Subtitle>
-                      <h3 className="accommodation-detail-subtitle">
+                      <h3 className="accommodation-detail-subtitle text-center">
                         {accommodation.type}
                       </h3>
                     </Card.Subtitle>
@@ -127,14 +122,14 @@ function AccommodationDetail() {
                     </li>
                   </ul>
                   <Link to={`/enquiry`}>
-                    <Button className="btn-cta btn btn-lg">Book today</Button>
+                    <Button className="btn-details-cta btn-lg">Book today</Button>
                   </Link>
-                  <div className="back-to-link">
+                  <div className="back-to-link text-center mt-2">
                     <Link to={`/accommodations`}>
-                      <span>
+                      <span className="backlink-chevron">
                         <BiChevronLeftCircle />
                       </span>
-                      <span>&nbsp;Back to previous page</span>
+                      <span className="backlink">&nbsp;Back to previous page</span>
                     </Link>
                   </div>
                 </div>

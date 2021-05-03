@@ -12,18 +12,13 @@ export default function Accommodations() {
         role="img"
         aria-label="houses sea side in Bergen"
       >
-        <Container className="accommodations-content-container">
-          <div className="accommodations-heading">
-            <Heading
-              title="Accommodation in Bergen"
-              className="font-family-primary font-color-white"
-            />
-          </div>
-          <div className="accommodations-subheading">
-            <h2 className="font-family-secondary font-color-white">
-              Find the right spot for you and yours
-            </h2>
-          </div>
+        <Container className="accommodations-heading-container">
+            <div className="accommodations-heading">
+            <Heading title="Accommodation in Bergen" />
+            <h3 className="font-family-secondary font-color-white accommodations-subheading">
+              Locate your place to stay in Bergen, Norway
+            </h3>
+            </div>
         </Container>
       </div>
 

@@ -20,14 +20,32 @@
     font-size: 40px;
 }
 
-.home-subheading {
+.home-subheading,
+.accommodations-subheading,
+.activities-subheading {
     font-family: $secondary-font;
-    color: $white-color;
+    color: $snow-color;
     font-size: 24px;
+    font-weight: 400;
+}
+
+.activities-detail-title {
+    font-family: $primary-font;
+    color: $snow-color;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.activities-detail-text {
+    font-family: $secondary-font;
+    color: $snow-color;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .content-subheading {
     font-family: $secondary-font;
     color: $silver-color;
     font-size: 24px;
+    font-weight: 400;
 }
