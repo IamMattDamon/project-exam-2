@@ -1,6 +1,8 @@
 import Heading from "./../layout/Heading";
 import Footer from "./../layout/Footer";
 import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import FeaturedList from "./../accommodations/FeaturedList";
 import ActivitiesList from "./../activities/ActivitiesList";
 
@@ -19,6 +21,11 @@ export default function Home() {
             <h2 className="home-subheading">
               Get the best deals on accommodation
             </h2>
+            <Link to={`/accommodations`}>
+              <Button className="btn-home-cta mt-2">
+                Find your place
+              </Button>
+            </Link>
           </div>
         </Container>
       </div>

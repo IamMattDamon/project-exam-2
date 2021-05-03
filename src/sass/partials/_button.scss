@@ -6,6 +6,22 @@
     width: 100%;
 }
 
+.btn-home-cta {
+    background-color: $primary-cerise;
+    color: $white-color;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+
+.btn-home-cta:hover {
+    background-color: $cerise-shade1;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    color: $white-color;
+}
+
 .btn-details-cta {
     background-color: $primary-cerise;
     color: $white-color;

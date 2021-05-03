@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import AuthContext from "./../../context/AuthContext";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -25,23 +25,23 @@ export default function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Link to="/" exact className="nav-link">
+            <NavLink to="/" exact className="nav-link">
               Home
-            </Link>
-            <Link to="/accommodations" exact className="nav-link">
+            </NavLink>
+            <NavLink to="/accommodations" exact className="nav-link">
               Accommodations
-            </Link>
-            <Link to="/enquiry" exact className="nav-link">
+            </NavLink>
+            <NavLink to="/enquiry" exact className="nav-link">
               Enquiry
-            </Link>
-            <Link to="/contact" exact className="nav-link">
+            </NavLink>
+            <NavLink to="/contact" exact className="nav-link">
               Contact
-            </Link>
+            </NavLink>
             {auth ? (
               <>
-                <Link to="/admin" exact className="nav-link">
+                <NavLink to="/admin" exact className="nav-link">
                   Admin
-                </Link>
+                </NavLink>
                 <button
                   onClick={logout}
                   className="btn-sm btn-primary ml-lg-3 py-0 mr-auto mt-3 mt-lg-0 logout-btn"
@@ -50,9 +50,9 @@ export default function Navigation() {
                 </button>
               </>
             ) : (
-              <Link to="/login" exact className="nav-link">
+              <NavLink to="/login" exact className="nav-link">
                 Login
-              </Link>
+              </NavLink>
             )}
           </Nav>
         </Navbar.Collapse>
