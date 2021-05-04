@@ -72,3 +72,13 @@ body {
     background-color: $fuchsia-shade1;
     color: $snow-color;
 }
+
+.transport-list {
+    width: 425px;
+}
+
+.transport-container {
+    background-color: $fuchsia-black-color;
+    width: fit-content;
+    border-radius: 5px;
+}

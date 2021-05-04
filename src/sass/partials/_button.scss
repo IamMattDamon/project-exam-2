@@ -58,14 +58,23 @@
 }
 
 .back-to-link a {
-    color: $fuchsia-tint3 !important;
-    
+    color: $fuchsia-tint3 !important;   
 }
 
 .back-to-link a:hover {
     transition-duration: 0.3s;
     transition-timing-function: ease-in;
     color: $primary-jaffa !important;
+}
+
+.ext-link-a {
+    color: $white-color;
+}
+
+.ext-link-a:hover {
+    color: $primary-jaffa;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
 }
 
 .backlink-chevron {
