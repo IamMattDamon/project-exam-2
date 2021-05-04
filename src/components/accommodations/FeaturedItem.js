@@ -14,11 +14,11 @@ function FeaturedItem({
     return (
         <div className="mt-4">
 
-        <Card className="accommodation-card mr-5 mb-4">
+        <Card className="accommodation-card mb-4 mr-5">
           <div className="text-center">
           <img src={image[0].url} alt={image[0].name} className="accommodation-card-image" />
           </div>
-          <Card.Body className="d-flex flex-column justify-content-center dark-bg">
+          <Card.Body className="d-flex flex-column dark-bg">
             <Card.Title>
               <h2 className="accommodation-title text-center">{name}</h2>
             </Card.Title>

@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:wght@700&display=swap");
+html,
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body {
+  background: #57448e;
+  background: radial-gradient(circle, #57448e 0%, #1b0c45 100%);
+  font-family: "Cabin", sans-serif !important;
+}
+
+.home-header-background-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 22, 119, 0.5)), to(rgba(46, 22, 119, 0.5))), url("./../../images/bergen-city-center.jpg");
+  background-image: linear-gradient(to bottom, rgba(46, 22, 119, 0.5), rgba(46, 22, 119, 0.5)), url("./../../images/bergen-city-center.jpg");
+  height: 400px;
+  width: auto;
+  background-position: center;
+}
+
+.home-heading,
+.accommodations-heading,
+.accommodations-detail-heading,
+.activities-heading {
+  height: 400px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.activities-header-background-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 22, 119, 0.5)), to(rgba(46, 22, 119, 0.5))), url("./../../images/bergen-by-night.jpg");
+  background-image: linear-gradient(to bottom, rgba(46, 22, 119, 0.5), rgba(46, 22, 119, 0.5)), url("./../../images/bergen-by-night.jpg");
+  height: 400px;
+  width: auto;
+  background-position: center;
+}
+
+@media screen and (min-width: 1920px) {
+  .home-header-background-image {
+    background-size: cover;
+  }
+  .accommodations-header-background-image {
+    background-size: cover;
+  }
+  .activities-header-background-image {
+    background-size: cover;
+  }
+}
+
+.accommodations-header-background-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 22, 119, 0.5)), to(rgba(46, 22, 119, 0.5))), url("./../../images/bergen-ambience.jpg");
+  background-image: linear-gradient(to bottom, rgba(46, 22, 119, 0.5), rgba(46, 22, 119, 0.5)), url("./../../images/bergen-ambience.jpg");
+  height: 400px;
+  width: auto;
+  background-position: center;
+}
+
+.content-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding-bottom: 25px;
+  min-height: 100%;
+}
+
+.list-group-item {
+  background-color: #4E3C9A;
+  color: #F9F9F9;
+}
+
+.transport-list {
+  width: 425px;
+}
+
+.transport-container {
+  background-color: #1B0C45;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.mg-top-100 {
+  margin-top: 100px;
+}
+
+.navbar {
+  background: #1B0C45 !important;
+}
+
+img.nav-logo {
+  width: 175px;
+  height: auto;
+}
+
+.navbar-brand {
+  margin-right: 5rem !important;
+  margin-left: 3rem !important;
+}
+
+.navbar-toggler {
+  margin-right: 5rem !important;
+  border: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(241, 161, 58, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link.active {
+  color: #F1A13A !important;
+}
+
+footer {
+  background: #130026;
+  min-height: 200px;
+  width: 100%;
+  margin-top: auto;
+}
+
+ul.footer-link-ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.footer-link-a,
+.footer-icons,
+.footer-copyright-text {
+  color: #A8A8A8;
+}
+
+.footer-link-content a:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  color: #F1A13A !important;
+}
+
+.footer-icons {
+  font-size: 18px;
+}
+
+.footer-icons:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  color: #F1A13A !important;
+  cursor: pointer;
+}
+
+.footer-title {
+  color: #A8A8A8;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.main-heading {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.font-color-white {
+  color: #FFFFFF;
+}
+
+.font-color-dark {
+  color: #1B0C45;
+}
+
+.font-family-primary {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.font-family-secondary {
+  font-family: "Cabin", sans-serif;
+}
+
+.content-heading {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+.home-subheading,
+.accommodations-subheading,
+.activities-subheading {
+  font-family: "Cabin", sans-serif;
+  color: #F9F9F9;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.activities-detail-title {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #F9F9F9;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.activities-detail-text {
+  font-family: "Cabin", sans-serif;
+  color: #F9F9F9;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.content-subheading {
+  font-family: "Cabin", sans-serif;
+  color: #A8A8A8;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.accommodation-card-image,
+.activities-card-image {
+  width: 300px;
+  height: auto;
+}
+
+.accommodation-card {
+  width: 300px;
+}
+
+.activities-card {
+  width: 300px;
+}
+
+.accommodation-title,
+.activities-title {
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.accommodation-subtitle {
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.activities-card-body {
+  background-color: #EFEDF8;
+}
+
+.activities-subtitle {
+  font-size: 16px;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+}
+
+.activities-title,
+.activities-subtitle {
+  color: #1B0C45;
+}
+
+.list-group-item {
+  font-size: 16px;
+  font-family: "Cabin", sans-serif;
+}
+
+.accommodation-background-fuchsia {
+  background-color: #624CC1;
+}
+
+.accommodation-detail-description,
+.activities-detail-description {
+  background-color: #FFFFFF;
+}
+
+.dark-bg {
+  background-color: #1B0C45;
+  color: #FFFFFF;
+}
+
+.card {
+  background-color: unset;
+}
+
+.card-body {
+  padding: 0.75rem;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.accommodation-detail-image,
+.activities-detail-image {
+  width: 500px;
+  height: auto;
+}
+
+.accommodation-detail-description,
+.activities-detail-description {
+  width: 500px;
+}
+
+.accommodation-detail-container,
+.activities-detail-card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.accommodation-detail-card,
+.activities-detail-card {
+  background: #271E4D !important;
+  border-radius: 10px;
+}
+
+.accommodation-detail-title,
+.accommodation-detail-subtitle {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.accommodation-detail-body {
+  background-color: #1B0C45;
+}
+
+.list-group-item {
+  padding: .5rem 1rem;
+}
+
+.accommodation-detail-btn,
+.btn-activities-cta {
+  background-color: #E14068;
+  color: #FFFFFF;
+  font-size: 16px;
+  width: 100%;
+}
+
+.btn-home-cta {
+  background-color: #E14068;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+}
+
+.btn-home-cta:hover {
+  background-color: #9D2C48;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  color: #FFFFFF;
+}
+
+.btn-details-cta {
+  background-color: #E14068;
+  color: #FFFFFF;
+  font-size: 20px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.accommodation-detail-btn:hover {
+  background-color: #9D2C48;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  color: #FFFFFF;
+}
+
+.btn-activities-cta:hover {
+  background-color: #9D2C48;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  color: #FFFFFF;
+}
+
+.btn-details-cta:hover {
+  background-color: #9D2C48;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  color: #FFFFFF;
+}
+
+.btn-activities-cta {
+  border: none;
+}
+
+.back-to-link a {
+  color: #EFEDF8 !important;
+}
+
+.back-to-link a:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  color: #F1A13A !important;
+}
+
+.ext-link-a {
+  color: #FFFFFF;
+}
+
+.ext-link-a:hover {
+  color: #F1A13A;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+.backlink-chevron {
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
