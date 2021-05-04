@@ -10,7 +10,6 @@ function FeaturedItem({
     bedrooms,
     size,
     image,
-    featured,
 }) {
     return (
         <div className="mt-4">
