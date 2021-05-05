@@ -6,7 +6,8 @@
     width: 100%;
 }
 
-.btn-home-cta {
+.btn-home-cta,
+.enq-btn-cta {
     background-color: $primary-cerise;
     color: $white-color;
     font-size: 16px;
@@ -16,6 +17,13 @@
 }
 
 .btn-home-cta:hover {
+    background-color: $cerise-shade1;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    color: $white-color;
+}
+
+.enq-btn-cta:hover {
     background-color: $cerise-shade1;
     transition-duration: 0.3s;
     transition-timing-function: ease-in;

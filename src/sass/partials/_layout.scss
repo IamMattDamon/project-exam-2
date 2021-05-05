@@ -31,11 +31,39 @@ body {
     vertical-align: middle;
 }
 
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.enquiry-form-container {
+    padding-top: 150px;
+}
+
 .activities-header-background-image {
     background-image:
     linear-gradient(to bottom, rgba(46, 22, 119, 0.5), rgba(46, 22, 119, 0.5)),
     url("./../../images/bergen-by-night.jpg");
     height: 400px;
+    width: auto;
+    background-position: center;
+}
+
+.accommodations-header-background-image {
+    background-image:
+    linear-gradient(to bottom, rgba(46, 22, 119, 0.5), rgba(46, 22, 119, 0.5)),
+    url("./../../images/bergen-ambience.jpg");
+    height: 400px;
+    width: auto;
+    background-position: center;
+}
+
+.enquiry-header-background-image {
+    background-image:
+    linear-gradient(to bottom, rgba(46, 22, 119, 0.65), rgba(46, 22, 119, 0.65)),
+    url("./../../images/bergen-from-floien.jpg");
+    height: 800px;
     width: auto;
     background-position: center;
 }
@@ -50,15 +78,9 @@ body {
     .activities-header-background-image {
         background-size: cover;
     }
-}
-
-.accommodations-header-background-image {
-    background-image:
-    linear-gradient(to bottom, rgba(46, 22, 119, 0.5), rgba(46, 22, 119, 0.5)),
-    url("./../../images/bergen-ambience.jpg");
-    height: 400px;
-    width: auto;
-    background-position: center;
+    .enquiry-header-background-image {
+        background-size: cover;
+    }
 }
 
 .content-wrapper {
@@ -85,4 +107,14 @@ body {
 
 .mg-top-100 {
     margin-top: 100px;
+}
+
+.content-wrapper.enquiry {
+    padding-bottom: 0;
+}
+
+.enquiry-form {
+    background-image: 
+    linear-gradient(to bottom, rgba(19, 0, 38, 0.5), rgba(19, 0, 38, 0.5));
+    width: 80%;
 }

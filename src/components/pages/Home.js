@@ -35,7 +35,7 @@ export default function Home() {
           <main>
             <section className="mt-5">
               <div className="home-content-container">
-                <h2 className="content-heading mb-3 text-center">
+                <h2 className="content-heading mb-2 text-center">
                   Featured Accommodations
                 </h2>
                 <h3 className="content-subheading text-center">
@@ -46,7 +46,7 @@ export default function Home() {
             </section>
             <section className="mg-top-100">
               <div className="home-content-container">
-                <h2 className="content-heading mt-5 mb-3 text-center">
+                <h2 className="content-heading mt-5 mb-2 text-center">
                   Explore Bergen
                 </h2>
                 <h3 className="content-subheading text-center">
@@ -59,7 +59,7 @@ export default function Home() {
             <section className="mg-top-100">
                 <Container className="home-jumbotron-container mr-5">
                   <Jumbotron>
-                  <h1 className="text-center jumbotron-heading mb-3">The Bergen Card</h1>
+                  <h1 className="text-center jumbotron-heading mb-2">The Bergen Card</h1>
                   <p className="jumbotron-text">
                     Available in 24, 48, 72 and 96 hour packages. The card includes
                     travel on Bergen's busses, light railway. The card also give you
