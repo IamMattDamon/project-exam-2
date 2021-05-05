@@ -83,7 +83,11 @@
     width: 500px;
 }
 
-.accommodation-detail-container,
+.accommodation-detail-container {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
 .activities-detail-card {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -107,4 +111,14 @@
 
 .list-group-item {
     padding: .5rem 1rem;
+}
+
+.list-group-item.price-tag {
+    background-color: $primary-jaffa;
+    color: $fuchsia-black-color;
+    font-weight: 600;
+}
+
+.accommodations-detail-price {
+    color: $primary-jaffa;
 }

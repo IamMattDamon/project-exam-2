@@ -73,7 +73,7 @@ function AccommodationDetail() {
             </div>
           </Container>
         </div>
-          <Container className="accommodation-detail-container">
+          <Container className="accommodation-detail-container mt-5">
               <Card className="accommodation-detail-card">
               <Row className="p-4">
                 <div className="col mt-2 d-flex flex-column justify-content-center">
@@ -102,6 +102,9 @@ function AccommodationDetail() {
                     </Card.Subtitle>
                   </Card.Body>
                   <ul className="list-group list-group-flush">
+                    <li className="list-group-item price-tag text-center">
+                      From&nbsp;{accommodation.price}&nbsp;NOK per night
+                    </li>
                     <li className="list-group-item text-center">
                       {accommodation.bedrooms}&nbsp;Bedrooms
                     </li>

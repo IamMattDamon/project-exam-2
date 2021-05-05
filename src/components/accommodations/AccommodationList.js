@@ -53,6 +53,7 @@ function AccommodationList() {
             bathrooms,
             bedrooms,
             size,
+            price,
             image,
             featured,
             feature_one,
@@ -69,6 +70,7 @@ function AccommodationList() {
               bathrooms={bathrooms}
               bedrooms={bedrooms}
               size={size}
+              price={price}
               image={image}
               featured={featured}
               feature_one={feature_one}
