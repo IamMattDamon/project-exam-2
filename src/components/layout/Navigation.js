@@ -3,6 +3,7 @@ import { NavLink, useHistory } from "react-router-dom";
 import AuthContext from "./../../context/AuthContext";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
 import logo from "./../../images/holidaze_logo_darkbg.png";
 
 export default function Navigation() {
@@ -18,7 +19,7 @@ export default function Navigation() {
 
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-      <div className="container-fluid">
+      <Container>
         <Navbar.Brand>
           <img src={logo} alt="holidaze logo" className="nav-logo" />
         </Navbar.Brand>
@@ -56,7 +57,8 @@ export default function Navigation() {
             )}
           </Nav>
         </Navbar.Collapse>
-      </div>
+
+      </Container>
     </Navbar>
   );
 }
