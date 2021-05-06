@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Heading from "./../layout/Heading";
 import Footer from "./../layout/Footer";
 
@@ -61,6 +62,8 @@ export default function Contact({ contactData }) {
                       <Heading title="Contact Holidaze" />
                   </div>
                   <Form noValidate onSubmit={handleSubmit(onSubmit)}>
+                    <Row>
+                      <Col sm={12} md={6}>
                     <Form.Group controlId="contactForm.ControlInput1">
                         <Form.Label>Full Name</Form.Label>
                         <Form.Control
@@ -74,6 +77,8 @@ export default function Contact({ contactData }) {
                           </span>
                         )} 
                     </Form.Group>
+                    </Col>
+                    <Col sm={12} md={6}>
                     <Form.Group controlId="contactForm.ControlInput2">
                         <Form.Label>Email Address</Form.Label>
                         <Form.Control
@@ -88,6 +93,8 @@ export default function Contact({ contactData }) {
                             </span>
                            )}
                     </Form.Group>
+                    </Col>
+                    </Row>
                     <Form.Group controlId="contactForm.ControlInput3">
                         <Form.Label>Subject</Form.Label>
                         <Form.Control
@@ -108,7 +115,7 @@ export default function Contact({ contactData }) {
                         name="message"
                         as="textarea"
                         placeholder="Enter your message here"
-                        rows="8"
+                        rows="5"
                         ref={register}
                       />
                       {errors.message && (
@@ -117,6 +124,9 @@ export default function Contact({ contactData }) {
                         </span>
                       )}
                     </Form.Group>
+                    <Button type="submit" className="contact-btn-cta mt-2">
+                        Confirm booking
+                    </Button>
                   </Form>
 
                 </div>

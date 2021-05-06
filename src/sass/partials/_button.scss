@@ -7,7 +7,8 @@
 }
 
 .btn-home-cta,
-.enq-btn-cta {
+.enq-btn-cta,
+.contact-btn-cta {
     background-color: $primary-cerise;
     color: $white-color;
     font-size: 16px;
@@ -24,6 +25,13 @@
 }
 
 .enq-btn-cta:hover {
+    background-color: $cerise-shade1;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    color: $white-color;
+}
+
+.contact-btn-cta:hover {
     background-color: $cerise-shade1;
     transition-duration: 0.3s;
     transition-timing-function: ease-in;

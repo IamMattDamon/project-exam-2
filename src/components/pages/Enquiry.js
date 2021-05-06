@@ -171,7 +171,7 @@ export default function Enquiry({ enquiryData }) {
                         as="select"
                         placeholder="Days"
                         ref={register}
-                      />
+                      >
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -193,6 +193,14 @@ export default function Enquiry({ enquiryData }) {
                       <option>19</option>
                       <option>20</option>
                       <option>21</option>
+                      <option>22</option>
+                      <option>23</option>
+                      <option>24</option>
+                      <option>25</option>
+                      <option>26</option>
+                      <option>27</option>
+                      <option>28</option>
+                      </Form.Control>
                       {errors.days && (
                         <span className="text-danger">
                           {errors.days.message}
@@ -210,7 +218,7 @@ export default function Enquiry({ enquiryData }) {
                         as="select"
                         placeholder="People"
                         ref={register}
-                      />
+                      >
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -231,6 +239,7 @@ export default function Enquiry({ enquiryData }) {
                       <option>18</option>
                       <option>19</option>
                       <option>20</option>
+                      </Form.Control>
                       {errors.people && (
                         <span className="text-danger">
                           {errors.people.message}
