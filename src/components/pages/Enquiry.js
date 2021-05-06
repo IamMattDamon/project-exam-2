@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Heading from "./../layout/Heading";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import Footer from "./../layout/Footer";
 
 const url = ENQUIRY_URL;
@@ -20,8 +21,12 @@ const schema = yup.object().shape({
     .string()
     .required("Enter your email address")
     .min(6, "Email address must be at least 6 characters"),
-  accommodations: yup.string().required("Choose your accommodation"),
-  date_of_arrival: yup.number().required("Enter date of arrival"),
+  accommodations: yup
+  .string()
+  .required("Choose your accommodation"),
+  date_of_arrival: yup
+  .number()
+  .required("Enter date of arrival"),
   days: yup
     .number()
     .required("Enter days you intend to stay at location")
@@ -38,7 +43,7 @@ export default function Enquiry({ enquiryData }) {
   });
 
   async function onSubmit(data) {
-    data.enquiry = enquiryData;
+    data.enquiryform = enquiryData;
 
     try {
       const response = await axios.post(url, data);
@@ -62,7 +67,7 @@ export default function Enquiry({ enquiryData }) {
                 <Heading title="Booking Enquiries" />
               </div>
               <Form noValidate onSubmit={handleSubmit(onSubmit)}>
-                <div className="row">
+                <Row>
                   <div className="col-sm-12 col-md-6">
                     <Form.Group controlId="enquiryForm.ControlInput1">
                       <Form.Label className="enq-label-fullname">
@@ -85,6 +90,7 @@ export default function Enquiry({ enquiryData }) {
                       <Form.Label className="enq-label-email">Email</Form.Label>
                       <Form.Control
                         name="email"
+                        type="email"
                         placeholder="Enter email address"
                         ref={register}
                       />
@@ -95,7 +101,7 @@ export default function Enquiry({ enquiryData }) {
                       )}
                     </Form.Group>
                   </div>
-                </div>
+                </Row>
                 <Form.Group controlId="enquiryForm.ControlSelect1">
                   <Form.Label className="enq-label-acc">
                     Accommodations
@@ -147,7 +153,7 @@ export default function Enquiry({ enquiryData }) {
                         name="date_of_arrival"
                         placeholder="mm/dd/yyyy"
                         required
-                        pattern="\d{4}-\d{2}-\d{2}"
+                        pattern="\d{2}-\d{2}-\d{4}"
                         ref={register}
                       />
                       {errors.date_of_arrival && (
@@ -158,13 +164,35 @@ export default function Enquiry({ enquiryData }) {
                     </Form.Group>
                   </div>
                   <div className="col-sm-12 col-md-4">
-                    <Form.Group controlId="enquiryForm.ControlInput4">
+                    <Form.Group controlId="enquiryForm.ControlSelect2">
                       <Form.Label className="enq-label-days">Days</Form.Label>
                       <Form.Control
                         name="days"
+                        as="select"
                         placeholder="Days"
                         ref={register}
                       />
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
+                      <option>16</option>
+                      <option>17</option>
+                      <option>18</option>
+                      <option>19</option>
+                      <option>20</option>
+                      <option>21</option>
                       {errors.days && (
                         <span className="text-danger">
                           {errors.days.message}
@@ -173,15 +201,36 @@ export default function Enquiry({ enquiryData }) {
                     </Form.Group>
                   </div>
                   <div className="col-sm-12 col-md-4">
-                    <Form.Group controlId="enquiryForm.ControlInput5">
+                    <Form.Group controlId="enquiryForm.ControlSelect3">
                       <Form.Label className="enq-label-people">
                         People
                       </Form.Label>
                       <Form.Control
                         name="people"
+                        as="select"
                         placeholder="People"
                         ref={register}
                       />
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
+                      <option>16</option>
+                      <option>17</option>
+                      <option>18</option>
+                      <option>19</option>
+                      <option>20</option>
                       {errors.people && (
                         <span className="text-danger">
                           {errors.people.message}
