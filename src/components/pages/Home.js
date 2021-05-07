@@ -91,7 +91,7 @@ export default function Home() {
                 <Container className="py-2 px-4 transport-container mt-4">
                   <div className="d-flex flex-wrap justify-content-center">
                     <Row className="transport-list">
-                      <Col sm={4}>
+                      <Col xs={12} sm={4}>
                         <a
                           target="_blank"
                           href="https://www.skyss.no/"
@@ -104,7 +104,7 @@ export default function Home() {
                           <span>&nbsp;Skyss</span>
                         </a>
                       </Col>
-                      <Col sm={4}>
+                      <Col xs={12} sm={4}>
                         <a
                           target="_blank"
                           href="https://avinor.no/en/airport/bergen-airport/to-and-from-the-airport/bus-and-taxi/bus"
@@ -117,7 +117,7 @@ export default function Home() {
                           <span>&nbsp;Airport Bus</span>
                         </a>
                       </Col>
-                      <Col sm={4}>
+                      <Col xs={12} sm={4}>
                         <a
                           target="_blank"
                           href="https://www.nor-way.no/en/#/?step=2"
@@ -134,7 +134,7 @@ export default function Home() {
                   </div>
                   <div className="d-flex flex-wrap justify-content-center">
                     <Row className="transport-list">
-                      <Col sm={4}>
+                      <Col xs={12} sm={4}>
                         <a
                           target="_blank"
                           href="https://www.floyen.no/en"
@@ -147,7 +147,7 @@ export default function Home() {
                           <span>&nbsp;Fløibanen</span>
                         </a>
                       </Col>
-                      <Col sm={4}>
+                      <Col xs={12} sm={4}>
                         <a
                           target="_blank"
                           href="https://www.norled.no/en/expressboat/maps-and-schedules/"
@@ -160,7 +160,7 @@ export default function Home() {
                           <span>&nbsp;Norled</span>
                         </a>
                       </Col>
-                      <Col sm={4}>
+                      <Col xs={12} sm={4}>
                         <a
                           target="_blank"
                           href="https://www.hurtigruten.no/havner/bergen/"

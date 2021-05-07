@@ -7,79 +7,64 @@ export default function Footer() {
     <footer id="footer" className="main-footer">
       <Container>
         <Row>
-          <div className="col-xs-12 col-sm-6 col-md-3 mt-4">
-            <div className="footer-title-container">
+          <div className="col-sm-12 col-md-3 mt-4 footer-col">
               <h4 className="footer-title mt-4">Holidaze</h4>
-            </div>
-            <div className="footer-link-container">
               <ul className="footer-link-ul">
                 <li className="footer-link-li">
-                  <div className="footer-link-content">
+                  <div className="footer-link-content text-center">
                     <a href="#." className="footer-link-a">About</a>
                   </div>
                 </li>
                 <li className="footer-link-li">
-                  <div className="footer-link-content">
+                  <div className="footer-link-content text-center">
                     <a href="#." className="footer-link-a">Careers</a>
                   </div>
                 </li>
                 <li className="footer-link-li">
-                  <div className="footer-link-content">
+                  <div className="footer-link-content text-center">
                     <a href="#." className="footer-link-a">Affiliate Info</a>
                   </div>
                 </li>
               </ul>
-            </div>
           </div>
 
-          <div className="col-xs-12 col-sm-6 col-md-3 mt-4">
-            <div className="footer-title-container">
+          <div className="col-sm-12 col-md-3 mt-4 footer-col">
               <h4 className="footer-title mt-4">Contact</h4>
-            </div>
-            <div className="footer-link-container">
               <ul className="footer-link-ul">
                 <li className="footer-link-li">
-                  <div className="footer-link-content">
+                  <div className="footer-link-content text-center">
                     <a href="#." className="footer-link-a">Contact Admin</a>
                   </div>
                 </li>
                 <li className="footer-link-li">
-                  <div className="footer-link-content">
+                  <div className="footer-link-content text-center">
                     <a href="#." className="footer-link-a">Help/FAQ</a>
                   </div>
                 </li>
               </ul>
-            </div>
           </div>
 
-          <div className="col-xs-12 col-sm-6 col-md-3 mt-4">
-            <div className="footer-title-container">
+          <div className="col-sm-12 col-md-3 mt-4 footer-col">
               <h4 className="footer-title mt-4">Privacy</h4>
-            </div>
-            <div className="footer-link-container">
               <ul className="footer-link-ul">
                 <li className="footer-link-li">
-                  <div className="footer-link-content">
+                  <div className="footer-link-content text-center">
                     <a href="#." className="footer-link-a">Terms &amp; Conditions</a>
                   </div>
                 </li>
                 <li className="footer-link-li">
-                  <div className="footer-link-content">
+                  <div className="footer-link-content text-center">
                     <a href="#." className="footer-link-a">Privacy Policy</a>
                   </div>
                 </li>
               </ul>
-            </div>
           </div>
 
-          <div className="col-xs-12 col-sm-6 col-md-3 mt-4">
-            <div className="footer-title-container">
+          <div className="col-sm-12 col-md-3 mt-4 footer-col">
               <h4 className="footer-title mt-4">Social Media</h4>
-            </div>
-            <div className="footer-link-container">
               <ul className="footer-link-ul">
                 <li className="footer-link-li">
-                  <div className="footer-link-content">
+                  <div className="footer-link-content text-center">
                     <span className="mr-2">
                       <FaFacebookSquare className="footer-icons" />
                     </span>
@@ -95,14 +80,15 @@ export default function Footer() {
                   </div>
                 </li>
               </ul>
-            </div>
           </div>
         </Row>
       </Container>
-      <div className="footer-copyright-container">
-        <p className="footer-copyright-text mt-3 mb-0 text-center">
-          Copyright &#169;Holidaze 2021 | A project exam at Noroff by Frode
-          Karlsen
+      <div className="footer-copyright-container mt-3">
+        <p className="footer-copyright-text mb-0 text-center">
+          &#169;Code Karlsen 2021&nbsp;
+        </p>
+        <p className="footer-copyright-text mb-0 text-center">
+          Project Exam at Noroff by Frode Karlsen&nbsp;
         </p>
       </div>
     </footer>

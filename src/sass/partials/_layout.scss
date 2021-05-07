@@ -119,3 +119,77 @@ body {
     } 
 }
 
+@media screen and (max-width: 767px) {
+    .enquiry-form-container {
+        padding-top: 50px;
+    }
+    .enquiry-form,
+    .contact-form {
+        width: 100%;
+        padding: 2rem 2rem !important;
+    }
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1.main-heading {
+        font-size: 2rem !important;
+    }
+    h2.home-subheading {
+        font-size: 20px !important;
+    }
+    h2.content-heading {
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem !important;
+    }
+    h3.content-subheading {
+        font-size: 20px;
+    }
+    .form-label {
+        font-size: 0.8rem;
+    }
+    .form-control {
+        font-size: 0.8rem;
+    }
+    .form-group {
+        margin-bottom: 0.8rem;
+    }
+    .enq-btn-cta,
+    .contact-btn-cta,
+    .btn-home-cta {
+        font-size: 14px !important;
+    }
+    .enquiry-header-background-image,
+    .contact-header-background-image {
+        height: 700px !important;
+    }
+    .footer-col {
+        margin-top: .5rem !important;
+    }
+    .footer-copyright-container {
+        flex-direction: column !important;
+    }
+    p.footer-copyright-text {
+        font-size: 14px;
+    }
+    .transport-list {
+        width: 150px !important;
+    }
+    .home-content-container,
+    .home-jumbotron-container,
+    .home-content-container,
+    .activities-card,
+    .accommodation-card {
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1.main-heading {
+        font-size: 1.75rem !important;
+    }
+}
