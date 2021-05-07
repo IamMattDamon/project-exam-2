@@ -248,7 +248,7 @@ export default function Enquiry({ enquiryData }) {
                     </Form.Group>
                   </div>
                 </div>
-                <Button type="submit" className="enq-btn-cta mt-4">
+                <Button type="submit" className="enq-btn-cta mt-2">
                   Confirm booking
                 </Button>
               </Form>

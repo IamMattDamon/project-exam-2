@@ -61,10 +61,10 @@ export default function Home() {
                   <Jumbotron>
                   <h1 className="text-center jumbotron-heading mb-2">The Bergen Card</h1>
                   <p className="jumbotron-text">
-                    Available in 24, 48, 72 and 96 hour packages. The card includes
-                    travel on Bergen's busses, light railway. The card also give you
+                    Available in 24, 48, 72 and 96 hour packages. The Bergen card includes
+                    travel on Bergen's busses and light railway. You will also get exclusive
                     discounts on tours, restaurants, parking, bike hire and entries
-                    to cultural events and venues. 
+                    to cultural events and venues. A good deal for tourists in Bergen! 
                   </p>
                   <a                           
                     target="_blank"

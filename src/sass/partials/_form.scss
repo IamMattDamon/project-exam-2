@@ -12,20 +12,20 @@
 .enquiry-form {
     background-image: 
     linear-gradient(to bottom, rgba(19, 0, 38, 0.5), rgba(19, 0, 38, 0.5));
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
 
 .enquiry-form-container {
-    padding-top: 150px;
+    padding-top: 75px;
 }
 
 .contact-form {
     background-image:
     linear-gradient(to bottom, rgba(19, 0, 38, 0.5), rgba(19, 0, 38, 0.5));
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -35,3 +35,11 @@
     padding-top: 75px;
 }
 
+@media screen and (max-width: 767px) {
+    .enquiry-form-container {
+        padding-top: 50px;
+    }
+    .enquiry-form {
+        width: 100%;
+    }
+}

@@ -67,24 +67,6 @@ body {
     background-position: center;
 }
 
-@media screen and (min-width: 1920px) {
-    .home-header-background-image {
-        background-size: cover;
-    }
-    .accommodations-header-background-image {
-        background-size: cover;
-    }
-    .activities-header-background-image {
-        background-size: cover;
-    }
-    .enquiry-header-background-image {
-        background-size: cover;
-    }
-    .contact-header-background-image {
-        background-size: cover;
-    } 
-}
-
 .content-wrapper {
     box-sizing: border-box;
     position: relative;
@@ -118,3 +100,22 @@ body {
 .content-wrapper.contact {
     padding-bottom: 0;
 }
+
+@media screen and (min-width: 1920px) {
+    .home-header-background-image {
+        background-size: cover;
+    }
+    .accommodations-header-background-image {
+        background-size: cover;
+    }
+    .activities-header-background-image {
+        background-size: cover;
+    }
+    .enquiry-header-background-image {
+        background-size: cover;
+    }
+    .contact-header-background-image {
+        background-size: cover;
+    } 
+}
+

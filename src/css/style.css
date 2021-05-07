@@ -1,4 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:wght@700&display=swap");
+.form-label {
+  color: #F9F9F9;
+  margin-bottom: .25rem;
+}
+
+.form-control {
+  background-color: #1B0C45;
+  color: #A8A8A8;
+  border: 1px solid #624CC1 !important;
+}
+
+.enquiry-form {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(19, 0, 38, 0.5)), to(rgba(19, 0, 38, 0.5)));
+  background-image: linear-gradient(to bottom, rgba(19, 0, 38, 0.5), rgba(19, 0, 38, 0.5));
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+.enquiry-form-container {
+  padding-top: 75px;
+}
+
+.contact-form {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(19, 0, 38, 0.5)), to(rgba(19, 0, 38, 0.5)));
+  background-image: linear-gradient(to bottom, rgba(19, 0, 38, 0.5), rgba(19, 0, 38, 0.5));
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+.contact-form-container {
+  padding-top: 75px;
+}
+
+@media only screen and (max-width: 692px) {
+  .enquiry-form-container {
+    padding-top: 50px;
+  }
+}
+
 html,
 body {
   margin: 0;
@@ -42,22 +94,26 @@ body {
   background-position: center;
 }
 
-@media screen and (min-width: 1920px) {
-  .home-header-background-image {
-    background-size: cover;
-  }
-  .accommodations-header-background-image {
-    background-size: cover;
-  }
-  .activities-header-background-image {
-    background-size: cover;
-  }
-}
-
 .accommodations-header-background-image {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 22, 119, 0.5)), to(rgba(46, 22, 119, 0.5))), url("./../../images/bergen-ambience.jpg");
   background-image: linear-gradient(to bottom, rgba(46, 22, 119, 0.5), rgba(46, 22, 119, 0.5)), url("./../../images/bergen-ambience.jpg");
   height: 400px;
+  width: auto;
+  background-position: center;
+}
+
+.enquiry-header-background-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 22, 119, 0.65)), to(rgba(46, 22, 119, 0.65))), url("./../../images/bergen-from-floien.jpg");
+  background-image: linear-gradient(to bottom, rgba(46, 22, 119, 0.65), rgba(46, 22, 119, 0.65)), url("./../../images/bergen-from-floien.jpg");
+  height: 800px;
+  width: auto;
+  background-position: center;
+}
+
+.contact-header-background-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 22, 119, 0.75)), to(rgba(46, 22, 119, 0.75))), url("./../../images/bryggen3.jpg");
+  background-image: linear-gradient(to bottom, rgba(46, 22, 119, 0.75), rgba(46, 22, 119, 0.75)), url("./../../images/bryggen3.jpg");
+  height: 800px;
   width: auto;
   background-position: center;
 }
@@ -91,6 +147,38 @@ body {
   margin-top: 100px;
 }
 
+.content-wrapper.enquiry {
+  padding-bottom: 0;
+}
+
+.content-wrapper.contact {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 1920px) {
+  .home-header-background-image {
+    background-size: cover;
+  }
+  .accommodations-header-background-image {
+    background-size: cover;
+  }
+  .activities-header-background-image {
+    background-size: cover;
+  }
+  .enquiry-header-background-image {
+    background-size: cover;
+  }
+  .contact-header-background-image {
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 692px) {
+  .enquiry-form-container {
+    padding-top: 50px;
+  }
+}
+
 .navbar {
   background: #1B0C45 !important;
 }
@@ -102,11 +190,10 @@ img.nav-logo {
 
 .navbar-brand {
   margin-right: 5rem !important;
-  margin-left: 3rem !important;
 }
 
 .navbar-toggler {
-  margin-right: 5rem !important;
+  margin-right: 1rem !important;
   border: none;
 }
 
@@ -306,7 +393,11 @@ ul.footer-link-ul {
   width: 500px;
 }
 
-.accommodation-detail-container,
+.accommodation-detail-container {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
 .activities-detail-card {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -332,6 +423,16 @@ ul.footer-link-ul {
   padding: .5rem 1rem;
 }
 
+.list-group-item.price-tag {
+  background-color: #F1A13A;
+  color: #1B0C45;
+  font-weight: 600;
+}
+
+.accommodations-detail-price {
+  color: #F1A13A;
+}
+
 .accommodation-detail-btn,
 .btn-activities-cta {
   background-color: #E14068;
@@ -340,7 +441,9 @@ ul.footer-link-ul {
   width: 100%;
 }
 
-.btn-home-cta {
+.btn-home-cta,
+.enq-btn-cta,
+.contact-btn-cta {
   background-color: #E14068;
   color: #FFFFFF;
   font-size: 16px;
@@ -350,6 +453,24 @@ ul.footer-link-ul {
 }
 
 .btn-home-cta:hover {
+  background-color: #9D2C48;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  color: #FFFFFF;
+}
+
+.enq-btn-cta:hover {
+  background-color: #9D2C48;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  color: #FFFFFF;
+}
+
+.contact-btn-cta:hover {
   background-color: #9D2C48;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
@@ -425,5 +546,31 @@ ul.footer-link-ul {
 
 .backlink-chevron {
   font-size: 18px;
+}
+
+.jumbotron {
+  background-color: #624CC1;
+  background-image: linear-gradient(225deg, #271E4D 0%, #4E3C9A 50%, #271E4D 100%);
+  padding: 2rem 3rem;
+  -webkit-box-shadow: 2px 2px 10px #816FCD;
+          box-shadow: 2px 2px 10px #816FCD;
+}
+
+.jumbotron-heading {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.jumbotron-text {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.home-jumbotron-container {
+  width: 95%;
 }
 /*# sourceMappingURL=style.css.map */

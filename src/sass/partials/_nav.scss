@@ -8,11 +8,11 @@ img.nav-logo {
 }
 
 .navbar-brand {
-    margin-right: 5rem !important;
+    margin-right: 5rem;
 }
 
 .navbar-toggler {
-    margin-right: 1rem !important;
+    margin-right: 1rem;
     border: none;
 }
 
@@ -22,4 +22,13 @@ img.nav-logo {
 
 .nav-link.active {
     color: $primary-jaffa !important;
+}
+
+@media screen and (max-width: 892px) {
+    .navbar-toggler {
+        margin-right: 0;
+    }
+    .navbar-brand {
+        margin-right: 0;
+    }
 }
