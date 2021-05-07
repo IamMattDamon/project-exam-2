@@ -24,7 +24,7 @@
 }
 
 .enquiry-form-container {
-  padding-top: 75px;
+  padding-top: 100px;
 }
 
 .contact-form {
@@ -43,12 +43,6 @@
 
 .contact-form-container {
   padding-top: 75px;
-}
-
-@media only screen and (max-width: 692px) {
-  .enquiry-form-container {
-    padding-top: 50px;
-  }
 }
 
 html,
@@ -173,9 +167,118 @@ body {
   }
 }
 
-@media only screen and (max-width: 692px) {
+@media screen and (max-width: 767px) {
   .enquiry-form-container {
     padding-top: 50px;
+  }
+  .enquiry-form,
+  .contact-form {
+    width: 100%;
+    padding: 2rem 2rem !important;
+  }
+  .footer-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .activities-detail,
+  .activities-detail-body {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1.main-heading {
+    font-size: 40px !important;
+  }
+  h1.jumbotron-heading {
+    font-size: 32px;
+  }
+  h2.home-subheading {
+    font-size: 24px !important;
+  }
+  h2.content-heading {
+    font-size: 32px;
+    margin-bottom: 0.25rem !important;
+  }
+  h3.content-subheading {
+    font-size: 20px;
+  }
+  p.jumbotron-text {
+    font-size: 16px;
+    margin-top: 10px !important;
+  }
+  .jumbotron {
+    padding: 1.5rem 1.5rem !important;
+  }
+  .form-label {
+    font-size: 0.8rem;
+  }
+  .form-control {
+    font-size: 0.8rem;
+  }
+  .form-group {
+    margin-bottom: 0.8rem;
+  }
+  .enq-btn-cta,
+  .contact-btn-cta,
+  .btn-home-cta {
+    font-size: 14px !important;
+  }
+  .enquiry-header-background-image,
+  .contact-header-background-image {
+    height: 700px !important;
+  }
+  .footer-col {
+    margin-top: .5rem !important;
+  }
+  .footer-copyright-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  p.footer-copyright-text {
+    font-size: 14px;
+  }
+  .transport-list {
+    width: 150px !important;
+  }
+  .home-content-container,
+  .home-jumbotron-container,
+  .home-content-container,
+  .activities-card,
+  .accommodation-card {
+    margin-right: 0 !important;
+  }
+  .home-header-background-image,
+  .activities-header-background-image,
+  .accommodations-header-background-image,
+  .home-heading,
+  .accommodations-heading,
+  .accommodations-detail-heading,
+  .activities-heading {
+    height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1.main-heading {
+    font-size: 32px !important;
+  }
+  h2.home-subheading,
+  h2.accommodations-subheading,
+  h2.activities-subheading {
+    font-size: 20px !important;
   }
 }
 
@@ -189,11 +292,11 @@ img.nav-logo {
 }
 
 .navbar-brand {
-  margin-right: 5rem !important;
+  margin-right: 5rem;
 }
 
 .navbar-toggler {
-  margin-right: 1rem !important;
+  margin-right: 1rem;
   border: none;
 }
 
@@ -203,6 +306,15 @@ img.nav-logo {
 
 .nav-link.active {
   color: #F1A13A !important;
+}
+
+@media screen and (max-width: 892px) {
+  .navbar-toggler {
+    margin-right: 0;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
 }
 
 footer {
@@ -249,6 +361,32 @@ ul.footer-link-ul {
   color: #A8A8A8;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
+}
+
+.footer-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-copyright-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-heading {
@@ -306,6 +444,10 @@ ul.footer-link-ul {
   color: #A8A8A8;
   font-size: 24px;
   font-weight: 400;
+}
+
+h1.main-heading {
+  font-size: 52px;
 }
 
 .accommodation-card-image,

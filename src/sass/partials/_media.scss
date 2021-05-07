@@ -1,0 +1,147 @@
+@media screen and (min-width: 1920px) {
+    .home-header-background-image {
+        background-size: cover;
+    }
+    .accommodations-header-background-image {
+        background-size: cover;
+    }
+    .activities-header-background-image {
+        background-size: cover;
+    }
+    .enquiry-header-background-image {
+        background-size: cover;
+    }
+    .contact-header-background-image {
+        background-size: cover;
+    } 
+}
+
+@media screen and (max-width: 1200px) {
+    .accommodation-card-image,
+    .activities-card-image {
+        width: 250px !important;
+    }
+    .accommodation-card,
+    .activities-card {
+        width: 252px !important;
+    }
+    .accommodation-card-body,
+    .activities-card-body {
+        padding: 0.5rem !important;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .accommodation-card,
+    .activities-card {
+        margin-right: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .enquiry-form-container {
+        padding-top: 50px;
+    }
+    .enquiry-form,
+    .contact-form {
+        width: 100%;
+        padding: 2rem 2rem !important;
+    }
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .activities-detail,
+    .activities-detail-body {
+        align-items: center !important;
+    }
+    .accommodation-card,
+    .activities-card {
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1.main-heading {
+        font-size: 40px !important;
+    }
+    h1.jumbotron-heading {
+        font-size: 32px;
+    }
+    h2.home-subheading {
+        font-size: 24px !important;
+    }
+    h2.content-heading {
+        font-size: 32px;
+        margin-bottom: 0.25rem !important;
+    }
+    h3.content-subheading {
+        font-size: 20px;
+    }
+    p.jumbotron-text {
+        font-size: 16px;
+        margin-top: 10px !important;
+    }
+    .jumbotron {
+        padding: 1.5rem 1.5rem !important;
+    }
+    .form-label {
+        font-size: 0.8rem;
+    }
+    .form-control {
+        font-size: 0.8rem;
+    }
+    .form-group {
+        margin-bottom: 0.8rem;
+    }
+    .enq-btn-cta,
+    .contact-btn-cta,
+    .btn-home-cta {
+        font-size: 14px !important;
+    }
+    .enquiry-header-background-image,
+    .contact-header-background-image {
+        height: 700px !important;
+    }
+    .footer-col {
+        margin-top: .5rem !important;
+    }
+    .footer-copyright-container {
+        flex-direction: column !important;
+    }
+    p.footer-copyright-text {
+        font-size: 14px;
+    }
+    .transport-list {
+        width: 150px !important;
+    }
+    .home-content-container,
+    .home-jumbotron-container,
+    .home-content-container,
+    .activities-card,
+    .accommodation-card {
+        margin-right: 0 !important;
+    }
+    .home-header-background-image,
+    .activities-header-background-image,
+    .accommodations-header-background-image,
+    .home-heading,
+    .accommodations-heading,
+    .accommodations-detail-heading,
+    .activities-heading {
+        height: 300px !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1.main-heading {
+        font-size: 32px !important;
+    }
+    h2.home-subheading,
+    h2.accommodations-subheading,
+    h2.activities-subheading {
+        font-size: 20px !important;
+    }
+}

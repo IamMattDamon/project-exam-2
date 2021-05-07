@@ -39,7 +39,7 @@ export default function Home() {
                   Featured Accommodations
                 </h2>
                 <h3 className="content-subheading text-center">
-                  Our recommendations of places to stay in Bergen
+                  Best places to stay in Bergen
                 </h3>
                 <FeaturedList />
               </div>
@@ -50,7 +50,7 @@ export default function Home() {
                   Explore Bergen
                 </h2>
                 <h3 className="content-subheading text-center">
-                  Places to see and explore during your stay in Bergen
+                  Most popular tourist attractions in Bergen
                 </h3>
                 <ActivitiesList />
               </div>
@@ -86,7 +86,7 @@ export default function Home() {
                   Public Transport
                 </h2>
                 <h3 className="content-subheading text-center">
-                  Useful links for public transport in Bergen
+                  Links to public transport in Bergen
                 </h3>
                 <Container className="py-2 px-4 transport-container mt-4">
                   <div className="d-flex flex-wrap justify-content-center">

@@ -13,12 +13,15 @@ function AccommodationItem({
 }) {
   return (
     <div className="mt-4">
-
       <Card className="accommodation-card mr-5 mb-4">
         <div className="text-center">
-        <img src={image[0].url} alt={image[0].name} className="accommodation-card-image" />
+          <img
+            src={image[0].url}
+            alt={image[0].name}
+            className="accommodation-card-image"
+          />
         </div>
-        <Card.Body className="d-flex flex-column justify-content-center dark-bg">
+        <Card.Body className="d-flex flex-column justify-content-center dark-bg accommodation-card-body">
           <Card.Title>
             <h5 className="accommodation-title text-center">{name}</h5>
           </Card.Title>
@@ -43,7 +46,6 @@ function AccommodationItem({
           </button>
         </Link>
       </Card>
-
     </div>
   );
 }

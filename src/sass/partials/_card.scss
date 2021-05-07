@@ -5,11 +5,11 @@
 }
 
 .accommodation-card {
-    width: 300px;
+    width: 302px;
 }
 
 .activities-card {
-    width: 300px;
+    width: 302px;
 }
 
 .accommodation-title,
@@ -26,7 +26,7 @@
 }
 
 .activities-card-body {
-    background-color: $fuchsia-tint3;    
+    background-color: $fuchsia-black-color;
 }
 
 .activities-subtitle {
@@ -51,7 +51,14 @@
 
 .accommodation-detail-description,
 .activities-detail-description {
-    background-color: $white-color;
+    background-color: $fuchsia-black-color;
+    border-radius: 0 0 10px 10px;
+}
+
+p.accommodation-detail-text,
+p.activities-detail-text,
+h3.activities-title {
+    color: $white-color;
 }
 
 .dark-bg {
@@ -122,3 +129,4 @@
 .accommodations-detail-price {
     color: $primary-jaffa;
 }
+

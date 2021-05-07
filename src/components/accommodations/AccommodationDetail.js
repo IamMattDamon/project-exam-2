@@ -66,7 +66,7 @@ function AccommodationDetail() {
         >
           <Container className="accommodations-detail-container">
             <div className="accommodations-detail-heading">
-              <Heading title="Accommodation Details" />
+              <Heading title={accommodation.name} />
               <h3 className="accommodations-subheading">
                 Details about your accommodation in Bergen
               </h3>
@@ -85,7 +85,7 @@ function AccommodationDetail() {
                     />
                   </div>
                   <div className="accommodation-detail-description">
-                    <p className="card-text font-color-dark font-family-secondary p-3">{accommodation.description}</p>
+                    <p className="accommodation-detail-text p-3 mb-0">{accommodation.description}</p>
                   </div>
                 </div>
                 <div className="col">

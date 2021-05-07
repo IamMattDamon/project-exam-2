@@ -14,10 +14,10 @@ export default function Accommodations() {
         >
           <Container className="accommodations-heading-container">
             <div className="accommodations-heading">
-              <Heading title="Accommodation in Bergen" />
-              <h3 className="font-family-secondary font-color-white accommodations-subheading">
-                Locate your place to stay in Bergen, Norway
-              </h3>
+              <Heading title="Accommodations" />
+              <h2 className="accommodations-subheading">
+                Find your place to stay in Bergen
+              </h2>
             </div>
           </Container>
         </div>
