@@ -3,3 +3,4 @@ export const ACCOMMODATION_URL = "https://holidaze-heroku.herokuapp.com/accommod
 export const ACTIVITIES_URL = "https://holidaze-heroku.herokuapp.com/activities";
 export const ENQUIRY_URL = "https://holidaze-heroku.herokuapp.com/enquiryforms";
 export const CONTACT_URL = "https://holidaze-heroku.herokuapp.com/contactforms";
+export const LOGIN_URL = "https://holidaze-heroku.herokuapp.com/auth/local";
