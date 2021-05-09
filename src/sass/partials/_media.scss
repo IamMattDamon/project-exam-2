@@ -13,7 +13,10 @@
     }
     .contact-header-background-image {
         background-size: cover;
-    } 
+    }
+    .login-header-background-image {
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -56,10 +59,6 @@
     .activities-detail,
     .activities-detail-body {
         align-items: center !important;
-    }
-    .accommodation-card,
-    .activities-card {
-        margin-right: 0 !important;
     }
 }
 

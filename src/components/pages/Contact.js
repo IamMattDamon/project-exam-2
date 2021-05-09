@@ -125,7 +125,7 @@ export default function Contact({ contactData }) {
                       )}
                     </Form.Group>
                     <Button type="submit" className="contact-btn-cta mt-2">
-                        Confirm booking
+                        Submit message
                     </Button>
                   </Form>
 

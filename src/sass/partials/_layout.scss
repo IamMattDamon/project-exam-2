@@ -67,6 +67,15 @@ body {
     background-position: center;
 }
 
+.login-header-background-image {
+    background-image:
+    linear-gradient(to bottom, rgba(46, 22, 119, 0.75), rgba(46, 22, 119, 0.75)),
+    url("./../../images/bergen-from-floien2.jpg");
+    height: 800px;
+    width: auto;
+    background-position: center;
+}
+
 .content-wrapper {
     box-sizing: border-box;
     position: relative;
@@ -100,5 +109,6 @@ body {
 .content-wrapper.contact {
     padding-bottom: 0;
 }
-
-
+.content-wrapper.login {
+    padding-bottom: 0;
+}

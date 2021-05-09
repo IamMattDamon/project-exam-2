@@ -9,19 +9,7 @@
     border: 1px solid $primary-fuchsia !important;
 }
 
-.enquiry-form {
-    background-image: 
-    linear-gradient(to bottom, rgba(19, 0, 38, 0.5), rgba(19, 0, 38, 0.5));
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-}
-
-.enquiry-form-container {
-    padding-top: 100px;
-}
-
+.enquiry-form,
 .contact-form {
     background-image:
     linear-gradient(to bottom, rgba(19, 0, 38, 0.5), rgba(19, 0, 38, 0.5));
@@ -31,6 +19,24 @@
     border-radius: 10px;
 }
 
+.login-form {
+    background-image:
+    linear-gradient(to bottom, rgba(19, 0, 38, 0.5), rgba(19, 0, 38, 0.5));
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.enquiry-form-container {
+    padding-top: 100px;
+}
+
 .contact-form-container {
     padding-top: 75px;
 }
+
+.login-form-container {
+    padding-top: 75px;
+}
+
