@@ -17,14 +17,12 @@ import Footer from "./../layout/Footer";
 const url = LOGIN_URL;
 
 const schema = yup.object().shape({
-    username: yup
+    identifier: yup
     .string()
-    .required("Enter your email address")
-    .min(6, "Email address has to be at least 6 characters"),
+    .required("Enter your email address"),
     password: yup
     .string()
-    .required("Enter your password")
-    .min(6, "Password has to contain at least 6 characters"),
+    .required("Enter your password"),
 });
 
 export default function Login() {
@@ -78,15 +76,14 @@ export default function Login() {
                                 Username
                             </Form.Label>
                             <Form.Control
-                              name="username"
+                              name="identifier"
                               placeholder="Enter your username" 
                               ref={register}
                             />
-                            {errors.username && (
+                            {errors.identifier && 
                             <span className="text-danger">
-                            {errors.username.message}
-                            </span>
-                            )}
+                            {errors.identifier.message}
+                            </span>}
                         </Form.Group>
                         <Form.Group controlId="loginForm.ControlInput2">
                             <Form.Label className="login-label-password">
@@ -98,11 +95,10 @@ export default function Login() {
                               placeholder="Enter your password"
                               ref={register}
                             />
-                            {errors.password && (
+                            {errors.password && 
                             <span className="text-danger">
                             {errors.password.message}
-                            </span>                                
-                            )}
+                            </span>}
                         </Form.Group>
                         <Button className="btn login-btn-cta mt-2">
                             {submitting ? "Logging in" : "Login"}
