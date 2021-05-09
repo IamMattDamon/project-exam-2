@@ -60,6 +60,15 @@
     .activities-detail-body {
         align-items: center !important;
     }
+    .accommodation-card-image,
+    .activities-card-image {
+        width: 280px !important;
+    }
+    .accommodation-card,
+    .activities-card {
+        width: 282px !important;
+        margin-right: 0 !important;
+    }
 }
 
 @media screen and (max-width: 576px) {
