@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from "axios";
 import { CONTACT_URL } from "./../../constants/api";
+import Alert from "react-bootstrap/Alert";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -33,12 +35,15 @@ const schema = yup.object().shape({
 });
 
 export default function Contact({ contactData }) {
+    const [submitted, setSubmitted] = useState(false);  
+
     const { register, handleSubmit, errors } = useForm({
         resolver: yupResolver(schema),
     });
 
     async function onSubmit(data) {
         data.contactform = contactData;
+        setSubmitted(true);
 
         try {
             const response = await axios.post(url, data);
@@ -60,6 +65,9 @@ export default function Contact({ contactData }) {
                 <div className="contact-form align-content-center px-5 py-5">
                   <div className="contact-form-heading mb-3">
                       <Heading title="Contact Holidaze" />
+                  </div>
+                  <div className="contact-form-success">
+                  {submitted && <Alert variant="success">Your message has been sent! Average response time is 24 hours</Alert>}
                   </div>
                   <Form noValidate onSubmit={handleSubmit(onSubmit)}>
                     <Row>

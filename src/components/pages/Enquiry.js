@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from "axios";
 import { ENQUIRY_URL } from './../../constants/api';
+import Alert from "react-bootstrap/Alert";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Heading from "./../layout/Heading";
@@ -26,24 +28,26 @@ const schema = yup.object().shape({
   .required("Choose your accommodation"),
   date_of_arrival: yup
   .number()
-  .required("Enter date of arrival"),
+  .required("Enter date of arrival in this format ddmmyyyy")
+  .min(8, "Date format needs to be at least 8 figures ddmmyyyy"),
   days: yup
-    .number()
-    .required("Enter days you intend to stay at location")
-    .min(1, "At least one night must be booked"),
+  .number()
+  .required("Enter the amount of days you intend to stay at the location"),
   people: yup
     .number()
-    .required("Enter the amount of people in your company")
-    .min(1, "At least one guest must be selected"),
+    .required("Enter the amount of people in your company"),
 });
 
 export default function Enquiry({ enquiryData }) {
+  const [submitted, setSubmitted] = useState(false);
+
   const { register, handleSubmit, errors } = useForm({
     resolver: yupResolver(schema),
   });
 
   async function onSubmit(data) {
     data.enquiryform = enquiryData;
+    setSubmitted(true);
 
     try {
       const response = await axios.post(url, data);
@@ -65,6 +69,9 @@ export default function Enquiry({ enquiryData }) {
             <div className="enquiry-form align-content-center px-5 py-5">
               <div className="enquiry-form-heading mb-3">
                 <Heading title="Booking Enquiries" />
+              </div>
+              <div className="enquiry-form-success">
+              {submitted && <Alert variant="success">Your booking has been confirmed! Check your email for booking confirmation details</Alert>}
               </div>
               <Form noValidate onSubmit={handleSubmit(onSubmit)}>
                 <Row>
@@ -151,7 +158,7 @@ export default function Enquiry({ enquiryData }) {
                       </Form.Label>
                       <Form.Control
                         name="date_of_arrival"
-                        placeholder="mm/dd/yyyy"
+                        placeholder="ddmmyyyy"
                         required
                         pattern="\d{2}-\d{2}-\d{4}"
                         ref={register}

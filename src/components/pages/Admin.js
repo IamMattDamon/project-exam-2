@@ -7,7 +7,7 @@ export default function Admin() {
         <>
         <Container>
             <div className="mt-5">
-                <Heading title="Welcome, Admin!" />
+                <Heading title="Dashboard" />
             </div>
             <p>Remember, there is always money in the banana stand!</p>
         </Container>
