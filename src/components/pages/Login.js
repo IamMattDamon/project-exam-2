@@ -100,7 +100,7 @@ export default function Login() {
                             {errors.password.message}
                             </span>}
                         </Form.Group>
-                        <Button className="btn login-btn-cta mt-2">
+                        <Button className="btn login-btn-cta mt-2" type="submit">
                             {submitting ? "Logging in" : "Login"}
                         </Button>
                     </fieldset>
@@ -113,7 +113,7 @@ export default function Login() {
                           </Accordion.Toggle>
                           <Accordion.Collapse eventKey="0">
                               <Card.Body>
-                                  Admin
+                                  admin
                               </Card.Body>
                           </Accordion.Collapse>
                       </div>

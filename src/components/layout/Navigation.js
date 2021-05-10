@@ -45,7 +45,7 @@ export default function Navigation() {
                 </NavLink>
                 <button
                   onClick={logout}
-                  className="ml-lg-3 py-0 mr-auto mt-3 mt-lg-0 logout-btn-cta"
+                  className="ml-lg-3 mr-auto mt-3 logout-btn-cta"
                 >
                   Log out
                 </button>

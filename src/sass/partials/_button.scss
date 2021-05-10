@@ -9,14 +9,25 @@
 .btn-home-cta,
 .enq-btn-cta,
 .contact-btn-cta,
-.login-btn-cta,
-.logout-btn-cta {
+.login-btn-cta {
     background-color: $primary-cerise;
     color: $white-color;
     font-size: 16px;
     padding-left: 24px;
     padding-right: 24px;
     border: none;
+}
+
+.logout-btn-cta {
+    background-color: $primary-cerise;
+    color: $white-color;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
+    border-radius: 5px;
+    height: max-content;
+    margin-top: 7px !important;
 }
 
 .btn-home-cta:hover {
@@ -122,4 +133,5 @@
     border: .5px solid $primary-fuchsia;
     border-radius: 5px;
 }
+
 
