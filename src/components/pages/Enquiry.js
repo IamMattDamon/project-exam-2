@@ -119,30 +119,30 @@ export default function Enquiry({ enquiryData }) {
                     as="select"
                     ref={register}
                   >
-                    <option>Abels Gate 5B</option>
-                    <option>Aarnes Veg 3</option>
-                    <option>Askoyvegen 12</option>
-                    <option>Bjornsons Gate 27</option>
-                    <option>Dokken 5</option>
-                    <option>Fortunen 15</option>
-                    <option>Furulund 67</option>
-                    <option>Hamrevegen 10</option>
-                    <option>Lakslia 10</option>
-                    <option>Londalen 71</option>
-                    <option>Eggum Spa</option>
-                    <option>Eidsgaard</option>
-                    <option>Neshaugen</option>
-                    <option>Steigen</option>
-                    <option>Storevika</option>
-                    <option>Trollfjord</option>
-                    <option>Vallavik</option>
-                    <option>Augustin Bryggen</option>
-                    <option>Bergen Børs</option>
-                    <option>Citybox</option>
-                    <option>Grand Terminus</option>
-                    <option>Radisson Blu Royal</option>
-                    <option>Scandic Ørnen</option>
-                    <option>Scandic Torget</option>
+                    <option value="Abels_Gate_5B">Abels Gate 5B</option>
+                    <option value="Aarnes_Veg_3">Aarnes Veg 3</option>
+                    <option value="Askoyvegen_12">Askoyvegen 12</option>
+                    <option value="Abels_Gate_5B">Bjornsons Gate 27</option>
+                    <option value="Dokken_5">Dokken 5</option>
+                    <option value="Fortunen_15">Fortunen 15</option>
+                    <option value="Furulund_67">Furulund 67</option>
+                    <option value="Hamrevegen_10">Hamrevegen 10</option>
+                    <option value="Lakslia_10">Lakslia 10</option>
+                    <option value="Londalen_71">Londalen 71</option>
+                    <option value="Eggum_Spa">Eggum Spa</option>
+                    <option value="Eidsgaard">Eidsgaard</option>
+                    <option value="Neshaugen">Neshaugen</option>
+                    <option value="Steigen">Steigen</option>
+                    <option value="Storevika">Storevika</option>
+                    <option value="Trollfjord">Trollfjord</option>
+                    <option value="Vallavik">Vallavik</option>
+                    <option value="Augustin_Bryggen">Augustin Bryggen</option>
+                    <option value="Bergen_Børs">Bergen Børs</option>
+                    <option value="Citybox">Citybox</option>
+                    <option value="Grand_Terminus">Grand Terminus</option>
+                    <option value="Radisson_Blu_Royal">Radisson Blu Royal</option>
+                    <option value="Scandic_Ørnen">Scandic Ørnen</option>
+                    <option value="Scandic_Torget">Scandic Torget</option>
                   </Form.Control>
                   {errors.accommodations && (
                     <span className="text-danger">
@@ -159,8 +159,6 @@ export default function Enquiry({ enquiryData }) {
                       <Form.Control
                         name="date_of_arrival"
                         placeholder="ddmmyyyy"
-                        required
-                        pattern="\d{2}-\d{2}-\d{4}"
                         ref={register}
                       />
                       {errors.date_of_arrival && (
@@ -171,43 +169,13 @@ export default function Enquiry({ enquiryData }) {
                     </Form.Group>
                   </div>
                   <div className="col-sm-12 col-md-4">
-                    <Form.Group controlId="enquiryForm.ControlSelect2">
+                    <Form.Group controlId="enquiryForm.ControlInput4">
                       <Form.Label className="enq-label-days">Days</Form.Label>
                       <Form.Control
                         name="days"
-                        as="select"
                         placeholder="Days"
                         ref={register}
-                      >
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
-                      <option>10</option>
-                      <option>11</option>
-                      <option>12</option>
-                      <option>13</option>
-                      <option>14</option>
-                      <option>15</option>
-                      <option>16</option>
-                      <option>17</option>
-                      <option>18</option>
-                      <option>19</option>
-                      <option>20</option>
-                      <option>21</option>
-                      <option>22</option>
-                      <option>23</option>
-                      <option>24</option>
-                      <option>25</option>
-                      <option>26</option>
-                      <option>27</option>
-                      <option>28</option>
-                      </Form.Control>
+                      />
                       {errors.days && (
                         <span className="text-danger">
                           {errors.days.message}
@@ -216,37 +184,15 @@ export default function Enquiry({ enquiryData }) {
                     </Form.Group>
                   </div>
                   <div className="col-sm-12 col-md-4">
-                    <Form.Group controlId="enquiryForm.ControlSelect3">
+                    <Form.Group controlId="enquiryForm.ControlInput5">
                       <Form.Label className="enq-label-people">
                         People
                       </Form.Label>
                       <Form.Control
                         name="people"
-                        as="select"
                         placeholder="People"
                         ref={register}
-                      >
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
-                      <option>10</option>
-                      <option>11</option>
-                      <option>12</option>
-                      <option>13</option>
-                      <option>14</option>
-                      <option>15</option>
-                      <option>16</option>
-                      <option>17</option>
-                      <option>18</option>
-                      <option>19</option>
-                      <option>20</option>
-                      </Form.Control>
+                      />
                       {errors.people && (
                         <span className="text-danger">
                           {errors.people.message}

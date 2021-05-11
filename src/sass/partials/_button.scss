@@ -30,6 +30,16 @@
     margin-top: 7px !important;
 }
 
+.btn-details-cta {
+    background-color: $primary-cerise;
+    color: $white-color;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+}
+
 .btn-home-cta:hover {
     background-color: $cerise-shade1;
     transition-duration: 0.3s;
@@ -42,13 +52,6 @@
     transition-duration: 0.3s;
     transition-timing-function: ease-in;
     color: $white-color;
-}
-
-.enq-btn-cta:active,
-.contact-btn-cta:active,
-.login-btn-cta:active {
-    background-color: $cerise-shade1;
-    border: none;
 }
 
 .contact-btn-cta:hover {
@@ -70,16 +73,6 @@
     transition-duration: 0.3s;
     transition-timing-function: ease-in;
     color: $white-color;
-}
-
-.btn-details-cta {
-    background-color: $primary-cerise;
-    color: $white-color;
-    font-size: 20px;
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: none;
 }
 
 .accommodation-detail-btn:hover {

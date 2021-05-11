@@ -26,7 +26,7 @@ function ActivitiesItem({ id, name, image }) {
 ActivitiesItem.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
-  image: PropTypes.array.isRequired,
+  image: PropTypes.object.isRequired,
 };
 
 export default ActivitiesItem;
