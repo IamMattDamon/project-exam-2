@@ -137,11 +137,11 @@ export default function Enquiry({ enquiryData }) {
                     <option value="Trollfjord">Trollfjord</option>
                     <option value="Vallavik">Vallavik</option>
                     <option value="Augustin_Bryggen">Augustin Bryggen</option>
-                    <option value="Bergen_Børs">Bergen Børs</option>
+                    <option value="Bergen_Boers">Bergen Børs</option>
                     <option value="Citybox">Citybox</option>
                     <option value="Grand_Terminus">Grand Terminus</option>
                     <option value="Radisson_Blu_Royal">Radisson Blu Royal</option>
-                    <option value="Scandic_Ørnen">Scandic Ørnen</option>
+                    <option value="Scandic_Oernen">Scandic Oernen</option>
                     <option value="Scandic_Torget">Scandic Torget</option>
                   </Form.Control>
                   {errors.accommodations && (
