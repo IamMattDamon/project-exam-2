@@ -35,6 +35,9 @@
     .activities-card-body {
         padding: 0.5rem !important;
     }
+    .admin-content {
+        width: 90% !important;
+    }
 
 }
 
@@ -43,6 +46,13 @@
     .activities-card {
         margin-right: 1.5rem !important;
     }
+    .admin-links-container {
+        flex-direction: column !important;
+    }
+    .admin-content {
+        width: 80% !important;
+    }
+
 }
 
 @media screen and (max-width: 767px) {

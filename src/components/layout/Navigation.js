@@ -10,7 +10,6 @@ export default function Navigation() {
   const [auth, setAuth] = useContext(AuthContext);
 
   const history = useHistory();
-  console.log(auth);
 
   function logout() {
     setAuth(null);
