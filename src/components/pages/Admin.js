@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import { BiChevronRightCircle } from "react-icons/bi";
 import { HiMail } from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
+import { MdAddCircleOutline } from "react-icons/md";
 import Heading from "./../layout/Heading";
 import Container from "react-bootstrap/Container";
 import Footer from "./../../components/layout/Footer";
@@ -25,19 +25,19 @@ export default function Admin() {
             <div className="admin-links-container d-flex flex-row mt-3 ">
             <Link to="/admin/contact" exact className="admin-link mt-2 mr-2">
                 <Button className="admin-btn-cta">
-                    <span><HiMail /></span>
+                    <span className="admin-btn-icons"><HiMail /></span>
                     <span className="ml-1">Message inbox</span>
                 </Button>
             </Link>
             <Link to="/admin/enquiry" exact className="admin-link mt-2 mr-2">
                 <Button className="admin-btn-cta">
-                    <span><AiOutlineMenu /></span>
+                    <span className="admin-btn-icons"><AiOutlineMenu /></span>
                     <span className="ml-1">Enquiries received</span>
                 </Button>
             </Link>
             <Link to="/admin/create" exact className="admin-link mt-2">
                 <Button className="admin-btn-cta">
-                    <span><BiChevronRightCircle /></span>
+                    <span className="admin-btn-icons"><MdAddCircleOutline /></span>
                     <span className="ml-1">Create accommodation</span>
                 </Button>
             </Link>
