@@ -8,6 +8,9 @@ import Enquiry from "./components/pages/Enquiry";
 import Contact from "./components/pages/Contact";
 import Login from "./components/pages/Login";
 import Admin from "./components/pages/Admin";
+import ContactPost from "./components/admin/ContactPost";
+import EnquiryPost from "./components/admin/EnquiryPost";
+import CreateAccommodation from "./components/admin/CreateAccommodation";
 import { AuthProvider } from "./context/AuthContext";
 import "./sass/style.scss";
 
@@ -39,6 +42,15 @@ function App() {
               </Route>
               <Route path="/admin">
                 <Admin />
+              </Route>
+              <Route path="/admin/contact">
+                <ContactPost />
+              </Route>
+              <Route path="/admin/enquiry">
+                <EnquiryPost />
+              </Route>
+              <Route path="/admin/create">
+                <CreateAccommodation />
               </Route>
             </Switch>
         </Router>
