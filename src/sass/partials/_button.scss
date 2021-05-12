@@ -18,6 +18,16 @@
     border: none;
 }
 
+.admin-btn-cta {
+    background-color: $primary-cerise;
+    color: $white-color;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
+    width: fit-content;
+}
+
 .logout-btn-cta {
     background-color: $primary-cerise;
     color: $white-color;
@@ -40,55 +50,14 @@
     border: none;
 }
 
-.btn-home-cta:hover {
-    background-color: $cerise-shade1;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    color: $white-color;
-}
-
-.enq-btn-cta:hover {
-    background-color: $cerise-shade1;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    color: $white-color;
-}
-
-.contact-btn-cta:hover {
-    background-color: $cerise-shade1;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    color: $white-color;
-}
-
-.login-btn-cta:hover {
-    background-color: $cerise-shade1;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    color: $white-color;
-}
-
-.logout-btn-cta:hover {
-    background-color: $cerise-shade1;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    color: $white-color;
-}
-
-.accommodation-detail-btn:hover {
-    background-color: $cerise-shade1;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    color: $white-color;
-}
-
-.btn-activities-cta:hover {
-    background-color: $cerise-shade1;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    color: $white-color;
-}
-
+.logout-btn-cta:hover,
+.admin-btn-cta:hover,
+.login-btn-cta:hover,
+.contact-btn-cta:hover,
+.enq-btn-cta:hover,
+.btn-home-cta:hover,
+.accommodation-detail-btn:hover,
+.btn-activities-cta:hover,
 .btn-details-cta:hover {
     background-color: $cerise-shade1;
     transition-duration: 0.3s;

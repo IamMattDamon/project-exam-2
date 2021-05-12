@@ -17,6 +17,9 @@
     .login-header-background-image {
         background-size: cover;
     }
+    .admin-header-background-image {
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -149,7 +152,8 @@
     }
     h2.home-subheading,
     h2.accommodations-subheading,
-    h2.activities-subheading {
+    h2.activities-subheading,
+    h2.admin-subheading {
         font-size: 20px !important;
     }
 }

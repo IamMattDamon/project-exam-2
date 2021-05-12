@@ -3,7 +3,7 @@ import Footer from "./../layout/Footer";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { BiChevronLeftCircle } from "react-icons/bi";
+import { BiChevronRightCircle } from "react-icons/bi";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
@@ -72,9 +72,9 @@ export default function Home() {
                     rel="noreferrer"
                     className="ext-link-a">
                   <span>
-                    <BiChevronLeftCircle />
+                    <BiChevronRightCircle />
                   </span>
-                  <span>Find out more</span>
+                  <span className="ml-1">Find out more</span>
                   </a>
                   </Jumbotron>
                 </Container>
@@ -99,9 +99,9 @@ export default function Home() {
                           className="ext-link-a"
                         >
                           <span>
-                            <BiChevronLeftCircle />
+                            <BiChevronRightCircle />
                           </span>
-                          <span>&nbsp;Skyss</span>
+                          <span className="ml-1">Skyss</span>
                         </a>
                       </Col>
                       <Col xs={12} sm={4}>
@@ -112,9 +112,9 @@ export default function Home() {
                           className="ext-link-a"
                         >
                           <span>
-                            <BiChevronLeftCircle />
+                            <BiChevronRightCircle />
                           </span>
-                          <span>&nbsp;Airport Bus</span>
+                          <span className="ml-1">Airport Bus</span>
                         </a>
                       </Col>
                       <Col xs={12} sm={4}>
@@ -125,9 +125,9 @@ export default function Home() {
                           className="ext-link-a"
                         >
                           <span>
-                            <BiChevronLeftCircle />
+                            <BiChevronRightCircle />
                           </span>
-                          <span>&nbsp;Coast Bus</span>
+                          <span className="ml-1">Coast Bus</span>
                         </a>
                       </Col>
                     </Row>
@@ -142,9 +142,9 @@ export default function Home() {
                           className="ext-link-a"
                         >
                           <span>
-                            <BiChevronLeftCircle />
+                            <BiChevronRightCircle />
                           </span>
-                          <span>&nbsp;Fløibanen</span>
+                          <span className="ml-1">Fløibanen</span>
                         </a>
                       </Col>
                       <Col xs={12} sm={4}>
@@ -155,9 +155,9 @@ export default function Home() {
                           className="ext-link-a"
                         >
                           <span>
-                            <BiChevronLeftCircle />
+                            <BiChevronRightCircle />
                           </span>
-                          <span>&nbsp;Norled</span>
+                          <span className="ml-1">Norled</span>
                         </a>
                       </Col>
                       <Col xs={12} sm={4}>
@@ -168,9 +168,9 @@ export default function Home() {
                           className="ext-link-a"
                         >
                           <span>
-                            <BiChevronLeftCircle />
+                            <BiChevronRightCircle />
                           </span>
-                          <span>&nbsp;Hurtigruten</span>
+                          <span className="ml-1">Hurtigruten</span>
                         </a>
                       </Col>
                     </Row>

@@ -28,15 +28,21 @@
     border-radius: 10px;
 }
 
-.enquiry-form-container {
+.admin-content {
+    background-image:
+    linear-gradient(to bottom, rgba(19, 0, 38, 0.5), rgba(19, 0, 38, 0.5));
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.enquiry-form-container,
+.admin-content-container {
     padding-top: 100px;
 }
 
-.contact-form-container {
-    padding-top: 75px;
-}
-
+.contact-form-container,
 .login-form-container {
     padding-top: 75px;
 }
-
