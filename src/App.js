@@ -43,13 +43,13 @@ function App() {
               <Route path="/admin">
                 <Admin />
               </Route>
-              <Route path="/admin/messages">
+              <Route path="/admin/:messages">
                 <ContactPostList />
               </Route>
-              <Route path="/admin/enquiries">
+              <Route path="/admin/:enquiries">
                 <EnquiryPostList />
               </Route>
-              <Route path="/admin/create">
+              <Route path="/admin/:create">
                 <CreateAccommodation />
               </Route>
             </Switch>

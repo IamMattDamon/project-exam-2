@@ -23,19 +23,19 @@ export default function Admin() {
                 <h2 className="admin-subheading">Welcome, Admin!</h2>
             </div>
             <div className="admin-links-container d-flex flex-row mt-3 ">
-            <Link to="/admin/messages" exact className="admin-link mt-2 mr-2">
+            <Link to={`/admin/messages`} className="admin-link mt-2 mr-2">
                 <Button className="admin-btn-cta" >
                     <span className="admin-btn-icons"><HiMail /></span>
                     <span className="ml-1">Message inbox</span>
                 </Button>
             </Link>
-            <Link to="/admin/enquiries" exact className="admin-link mt-2 mr-2">
+            <Link to={`/admin/enquiries`} className="admin-link mt-2 mr-2">
                 <Button className="admin-btn-cta">
                     <span className="admin-btn-icons"><AiOutlineMenu /></span>
                     <span className="ml-1">Enquiries received</span>
                 </Button>
             </Link>
-            <Link to="/admin/create" exact className="admin-link mt-2">
+            <Link to={`/admin/create`} className="admin-link mt-2">
                 <Button className="admin-btn-cta">
                     <span className="admin-btn-icons"><MdAddCircleOutline /></span>
                     <span className="ml-1">Create accommodation</span>
