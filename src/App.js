@@ -8,8 +8,8 @@ import Enquiry from "./components/pages/Enquiry";
 import Contact from "./components/pages/Contact";
 import Login from "./components/pages/Login";
 import Admin from "./components/pages/Admin";
-import ContactPost from "./components/admin/ContactPost";
-import EnquiryPost from "./components/admin/EnquiryPost";
+import ContactPostList from "./components/admin/ContactPostList";
+import EnquiryPostList from "./components/admin/EnquiryPostList";
 import CreateAccommodation from "./components/admin/CreateAccommodation";
 import { AuthProvider } from "./context/AuthContext";
 import "./sass/style.scss";
@@ -43,11 +43,11 @@ function App() {
               <Route path="/admin">
                 <Admin />
               </Route>
-              <Route path="/admin/contact">
-                <ContactPost />
+              <Route path="/admin/messages">
+                <ContactPostList />
               </Route>
-              <Route path="/admin/enquiry">
-                <EnquiryPost />
+              <Route path="/admin/enquiries">
+                <EnquiryPostList />
               </Route>
               <Route path="/admin/create">
                 <CreateAccommodation />

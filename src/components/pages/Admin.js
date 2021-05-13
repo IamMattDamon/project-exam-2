@@ -23,13 +23,13 @@ export default function Admin() {
                 <h2 className="admin-subheading">Welcome, Admin!</h2>
             </div>
             <div className="admin-links-container d-flex flex-row mt-3 ">
-            <Link to="/admin/contact" exact className="admin-link mt-2 mr-2">
-                <Button className="admin-btn-cta">
+            <Link to="/admin/messages" exact className="admin-link mt-2 mr-2">
+                <Button className="admin-btn-cta" >
                     <span className="admin-btn-icons"><HiMail /></span>
                     <span className="ml-1">Message inbox</span>
                 </Button>
             </Link>
-            <Link to="/admin/enquiry" exact className="admin-link mt-2 mr-2">
+            <Link to="/admin/enquiries" exact className="admin-link mt-2 mr-2">
                 <Button className="admin-btn-cta">
                     <span className="admin-btn-icons"><AiOutlineMenu /></span>
                     <span className="ml-1">Enquiries received</span>
