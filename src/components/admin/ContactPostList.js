@@ -1,27 +1,17 @@
 import { useState, useEffect } from "react";
-import { useParams, useHistory } from "react-router-dom";
 import ContactPostItem from "./ContactPostItem";
 import { CONTACT_URL } from "./../../constants/api";
 import Container from "react-bootstrap/Container";
 
 function ContactPostList() {
-    const [contactforms, setContactforms] = useState(null);
+    const [contactforms, setContactforms] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
-let history = useHistory();
-const { messages } = useParams();
-
-if (!messages) {
-    history.push("/");
-}
-
-const url = CONTACT_URL + "/" + messages;
 
     useEffect(function () {
         async function fetchData() {
             try {
-                const response = await fetch(url);
+                const response = await fetch(CONTACT_URL);
 
                 if (response.ok) {
                     const json = await response.json();
@@ -37,9 +27,7 @@ const url = CONTACT_URL + "/" + messages;
             }
         }
         fetchData();
-      },
-      [url]
-    );
+      }, []);
 
     if (loading) {
         return <div className="container font-color-white font-family-secondary">Loading...</div>;
