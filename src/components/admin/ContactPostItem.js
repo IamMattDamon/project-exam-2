@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { HiMail } from "react-icons/hi";
+import { AiOutlineMenu } from "react-icons/ai";
+import { MdAddCircleOutline } from "react-icons/md";
 import { BiChevronLeftCircle } from "react-icons/bi";
 
 function ContactPostItem({
@@ -43,14 +46,6 @@ function ContactPostItem({
             </Card.Header>
           </Card>
         </Accordion>
-        <div className="back-to-link text-center mt-2">
-          <Link to={`/admin`}>
-            <span className="backlink-chevron">
-              <BiChevronLeftCircle />
-            </span>
-            <span className="backlink">&nbsp;Back to admin pages</span>
-          </Link>
-        </div>
     </>
   );
 }

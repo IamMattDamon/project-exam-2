@@ -11,7 +11,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
-import AuthCotext from "./../../context/AuthContext";
+import AuthContext from "./../../context/AuthContext";
 import Footer from "./../layout/Footer";
 
 const url = LOGIN_URL;
@@ -34,7 +34,7 @@ export default function Login() {
     });
 
     const history = useHistory();
-    const [auth, setAuth] = useContext(AuthCotext);
+    const [auth, setAuth] = useContext(AuthContext);
 
     async function onSubmit(data) {
         setSubmitting(true);
