@@ -1,22 +1,34 @@
-import { useState, useEffect } from "react";
-import ContactPostItem from "./ContactPostItem";
-import { CONTACT_URL } from "./../../constants/api";
+import { useState, useContext, useEffect } from "react";
+import AuthContext from "./../../context/AuthContext";
+import MessageItem from "./MessageItem";
+import { CONTACT_URL } from "../../constants/api";
 import Container from "react-bootstrap/Container";
 
-function ContactPostList() {
+const url = CONTACT_URL;
+
+function MessageList() {
     const [contactforms, setContactforms] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [auth] = useContext(AuthContext);
 
     useEffect(function () {
         async function fetchData() {
+            const token = auth.jwt;
+    
+            const options = {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            };
             try {
-                const response = await fetch(CONTACT_URL);
+                const response = await fetch(url, options);
 
                 if (response.ok) {
                     const json = await response.json();
                     console.log(json);
                     setContactforms(json);
+                    
                 } else {
                     setError("An error has occurred");
                 }
@@ -27,7 +39,7 @@ function ContactPostList() {
             }
         }
         fetchData();
-      }, []);
+    }, [])
 
     if (loading) {
         return <div className="container font-color-white font-family-secondary">Loading...</div>;
@@ -51,7 +63,7 @@ function ContactPostList() {
                         message,
                     } = contactform;
                     return (
-                        <ContactPostItem
+                        <MessageItem
                         key={id}
                         id={id}
                         full_name={full_name}
@@ -68,4 +80,4 @@ function ContactPostList() {
       );
 }
 
-export default ContactPostList;
+export default MessageList;
