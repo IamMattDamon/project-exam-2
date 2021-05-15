@@ -1,10 +1,6 @@
 import MessageList from "../admin/MessageList";
-import Accordion from "react-bootstrap/Accordion";
-import Card from "react-bootstrap/Card";
 import Heading from "./../layout/Heading";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import { HiMail } from "react-icons/hi";
 import Footer from "./../../components/layout/Footer";
 
 

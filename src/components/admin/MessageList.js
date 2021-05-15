@@ -2,7 +2,6 @@ import { useState, useContext, useEffect } from "react";
 import AuthContext from "./../../context/AuthContext";
 import MessageItem from "./MessageItem";
 import { CONTACT_URL } from "../../constants/api";
-import Container from "react-bootstrap/Container";
 
 const url = CONTACT_URL;
 
@@ -51,7 +50,6 @@ function MessageList() {
 
       return (
           <>
-          <Container>
               <div className="contactpost-list">
                 {contactforms.map(function (contactform) {
                     const {
@@ -75,7 +73,6 @@ function MessageList() {
                     );
                 })}
               </div> 
-          </Container>
           </>
       );
 }
