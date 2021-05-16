@@ -1,9 +1,7 @@
-import MessageList from "../admin/MessageList";
 import Heading from "./../layout/Heading";
 import Container from "react-bootstrap/Container";
 import Footer from "./../../components/layout/Footer";
-
-
+import MessageModal from "./../layout/MessageModal";
 
 export default function Admin() {
   return (
@@ -22,7 +20,7 @@ export default function Admin() {
               </div>
               <div className="admin-links-container d-flex flex-row mt-3 ">
                 <div className="admin-messages-container">
-                    <MessageList />
+                    <MessageModal />
                 </div>
               </div>
             </div>

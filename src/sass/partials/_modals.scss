@@ -1,0 +1,68 @@
+.modal-header {
+    background-color: $nav-background;
+    border-bottom: 1px solid $fuchsia-shade1;
+}
+
+.modal-footer {
+    background-color: $nav-background;
+    border-top: 1px solid $fuchsia-shade1;
+}
+
+.modal-body {
+    background: rgb(87,68,142);
+    background: radial-gradient(circle, rgba(87,68,142,1) 0%, rgba(27,12,69,1) 100%);
+}
+
+.modal-title.h4 {
+    color: $white-color;
+}
+
+.close {
+    color: $white-color;
+}
+
+.btn-modal-close.btn.btn-primary {
+    background-color: $primary-cerise !important;
+    border: none;
+}
+
+.btn-modal-close.btn.btn-primary:hover {
+    background-color: $cerise-shade1 !important;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.card-header.message-dashboard-header {
+    padding: .25rem .75rem;
+}
+
+button.message-accordion-activation {
+    background-color: transparent;
+    border-radius: 5px;
+    color: $white-color;
+    font-family: $secondary-font !important;
+    border: none;
+    padding: .25rem .75rem;
+    border: .5px solid $fuchsia-tint1;
+}
+
+button.message-accordion-activation:hover {
+    background-color: $fuchsia-shade1;
+    color: $primary-jaffa;
+    transition-timing-function: ease-in;
+    transition-delay: 0.2s;
+}
+
+.contactform-dashboard-text {
+    font-size: 14px;
+    color: $white-color;
+}
+
+.contactform-dashboard-content {
+    padding: 1rem 1rem !important;
+    border-radius: 10px;
+}
+
+.messages-card.card {
+    border: none;
+}
