@@ -17,30 +17,30 @@ function App() {
       <AuthProvider>
         <Router>
           <Navigation />
-            <Switch>
-              <Route path="/" exact component={Home}></Route>
-              <Route exact path="/accommodations">
-                <Accommodations />
-              </Route>
-              <Route path="/accommodations/:id">
-                <AccommodationDetail />
-              </Route>
-              <Route path="/activities/:id">
-                <ActivitiesDetail />
-              </Route>
-              <Route path="/enquiry">
-                <Enquiry />
-              </Route>
-              <Route path="/contact">
-                <Contact />
-              </Route>
-              <Route path="/login">
-                <Login />
-              </Route>
-              <Route path="/admin">
-                <Admin />
-              </Route>
-            </Switch>
+          <Switch>
+            <Route path="/" exact component={Home}></Route>
+            <Route exact path="/accommodations">
+              <Accommodations />
+            </Route>
+            <Route path="/accommodations/:id">
+              <AccommodationDetail />
+            </Route>
+            <Route path="/activities/:id">
+              <ActivitiesDetail />
+            </Route>
+            <Route path="/enquiry">
+              <Enquiry />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/admin">
+              <Admin />
+            </Route>
+          </Switch>
         </Router>
       </AuthProvider>
     </>

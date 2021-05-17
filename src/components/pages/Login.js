@@ -112,7 +112,7 @@ export default function Login() {
                             Username
                           </Accordion.Toggle>
                           <Accordion.Collapse eventKey="0">
-                              <Card.Body>
+                              <Card.Body className="accordion-body-type">
                                   admin
                               </Card.Body>
                           </Accordion.Collapse>
@@ -122,7 +122,7 @@ export default function Login() {
                             Password
                           </Accordion.Toggle>
                           <Accordion.Collapse eventKey="1">
-                              <Card.Body>
+                              <Card.Body className="accordion-body-type">
                                   BananaStand:1337/
                               </Card.Body>
                           </Accordion.Collapse>

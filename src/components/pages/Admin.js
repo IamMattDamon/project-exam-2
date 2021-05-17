@@ -2,6 +2,7 @@ import Heading from "./../layout/Heading";
 import Container from "react-bootstrap/Container";
 import Footer from "./../../components/layout/Footer";
 import MessageModal from "./../layout/MessageModal";
+import EnquiryModal from "./../layout/EnquiryModal";
 
 export default function Admin() {
   return (
@@ -18,9 +19,15 @@ export default function Admin() {
                 <Heading title="Dashboard" />
                 <h2 className="admin-subheading">Welcome, Admin!</h2>
               </div>
-              <div className="admin-links-container d-flex flex-row mt-3 ">
+              <div className="admin-links-container d-flex flex-column mt-3 ">
                 <div className="admin-messages-container">
-                    <MessageModal />
+                  <MessageModal />
+                </div>
+                <div className="admin-enquiries-container mt-3">
+                  <EnquiryModal />
+                </div>
+                <div className="admin-create-container mt-3">
+                  
                 </div>
               </div>
             </div>
