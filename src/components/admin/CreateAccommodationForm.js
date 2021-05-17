@@ -8,6 +8,9 @@ import AuthContext from "../../context/AuthContext";
 import Alert from "react-bootstrap/Alert";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 
 const url = ACCOMMODATION_URL;
 
@@ -52,6 +55,7 @@ const schema = yup.object().shape({
 });
 
 export default function CreateAccommodationForm() {
+  const [submitted, setSubmitted] = useState(false);
   const [file, setFile] = useState(null);
   const [auth] = useContext(AuthContext);
 
@@ -64,6 +68,7 @@ export default function CreateAccommodationForm() {
   };
 
   async function onSubmit(data) {
+    setSubmitted(true);
     console.log(data);
 
     const token = auth.jwt;
@@ -85,6 +90,7 @@ export default function CreateAccommodationForm() {
 
   return (
     <>
+    <Container>
       <div className="create-form-success">
         {submitted && (
           <Alert variant="success">
@@ -93,123 +99,7 @@ export default function CreateAccommodationForm() {
         )}
       </div>
       <Form noValidate onSubmit={handleSubmit(onSubmit)}>
-        <Form.Group controlId="createForm.ControlInput1">
-          <Form.Label className="create-label-name">Address/name</Form.Label>
-          <Form.Control
-            name="name"
-            placeholder="Enter accommodation name"
-            ref={register}
-          />
-          {errors.name && (
-            <span className="text-danger">{errors.name.message}</span>
-          )}
-        </Form.Group>
-        <Form.Group controlId="createForm.ControlInput2">
-          <Form.Label className="create-label-type">Type</Form.Label>
-          <Form.Control
-            name="type"
-            placeholder="Enter type of accommodation"
-            ref={register}
-          />
-          {errors.type && (
-            <span className="text-danger">{errors.type.message}</span>
-          )}
-        </Form.Group>
-        <Form.Group controlId="createForm.ControlInput3">
-          <Form.Label className="create-label-description">
-            Description
-          </Form.Label>
-          <Form.Control
-            name="description"
-            placeholder="Enter description (20 to 100 characters)"
-            ref={register}
-          />
-          {errors.description && (
-            <span className="text-danger">{errors.description.message}</span>
-          )}
-        </Form.Group>
-        <Form.Group controlId="createForm.ControlInput4">
-          <Form.Label className="create-label-bedrooms">Bedrooms</Form.Label>
-          <Form.Control
-            name="bedrooms"
-            placeholder="Enter the amount of bedrooms"
-            ref={register}
-          />
-          {errors.bedrooms && (
-            <span className="text-danger">{errors.bedrooms.message}</span>
-          )}
-        </Form.Group>
-        <Form.Group controlId="createForm.ControlInput5">
-          <Form.Label className="create-label-bathrooms">Bathrooms</Form.Label>
-          <Form.Control
-            name="bathrooms"
-            placeholder="bathrooms"
-            ref={register}
-          />
-          {errors.bathrooms && (
-            <span className="text-danger">{errors.bathrooms.message}</span>
-          )}
-        </Form.Group>
-        <Form.Group controlId="createForm.ControlInput6">
-          <Form.Label className="create-label-size">Size</Form.Label>
-          <Form.Control name="size" placeholder="size in m2" ref={register} />
-          {errors.size && (
-            <span className="text-danger">{errors.size.message}</span>
-          )}
-        </Form.Group>
-        <Form.Group controlId="createForm.ControlInput7">
-          <Form.Label className="create-label-feature">Feature one</Form.Label>
-          <Form.Control
-            name="feature_one"
-            placeholder="feature one"
-            ref={register}
-          />
-          {errors.feature_one && (
-            <span className="text-danger">{errors.feature_one.message}</span>
-          )}
-        </Form.Group>
-        <Form.Group controlId="createForm.ControlInput8">
-          <Form.Label className="create-label-feature">Feature two</Form.Label>
-          <Form.Control
-            name="feature_two"
-            placeholder="feature two"
-            ref={register}
-          />
-          {errors.feature_two && (
-            <span className="text-danger">{errors.feature_two.message}</span>
-          )}
-        </Form.Group>
-        <Form.Group controlId="createForm.ControlInput9">
-          <Form.Label className="create-label-feature">
-            Feature three
-          </Form.Label>
-          <Form.Control
-            name="feature_three"
-            placeholder="feature three"
-            ref={register}
-          />
-          {errors.feature_three && (
-            <span className="text-danger">{errors.feature_three.message}</span>
-          )}
-        </Form.Group>
-        <Form.Group controlId="createForm.ControlInput10">
-          <Form.Label className="create-label-price">Price</Form.Label>
-          <Form.Control
-            name="price"
-            placeholder="price per night (NOK)"
-            ref={register}
-          />
-          {errors.price && (
-            <span className="text-danger">{errors.price.message}</span>
-          )}
-        </Form.Group>
-        <img
-          src={file ? URL.createObjectURL(file) : defaultImage}
-          alt={file ? file.name : "Default image"}
-          height="100%"
-          width="100px"
-        />
-        <Form.Group controlId="createForm.ControlTextarea1">
+      <Form.Group controlId="createForm.ControlTextarea1">
           <Form.Label className="create-label-image">Select image</Form.Label>
           <Form.Control
             name="image"
@@ -221,10 +111,145 @@ export default function CreateAccommodationForm() {
             <span className="text-danger">{errors.image.message}</span>
           )}
         </Form.Group>
+        <Row>
+        <Col sm={12} md={6}>
+        <Form.Group controlId="createForm.ControlInput1">
+          <Form.Label className="create-label-name">Address/name</Form.Label>
+          <Form.Control
+            name="name"
+            placeholder="Enter accommodation name"
+            ref={register}
+          />
+          {errors.name && (
+            <span className="text-danger">{errors.name.message}</span>
+          )}
+        </Form.Group>
+        </Col>
+        <Col sm={12} md={6}>
+        <Form.Group controlId="createForm.ControlInput2">
+          <Form.Label className="create-label-type">Type</Form.Label>
+          <Form.Control
+            name="type"
+            placeholder="Enter type of accommodation"
+            ref={register}
+          />
+          {errors.type && (
+            <span className="text-danger">{errors.type.message}</span>
+          )}
+        </Form.Group>
+        </Col>
+        </Row>
+        <Row>
+        <Col sm={12} md={4}>
+        <Form.Group controlId="createForm.ControlInput4">
+          <Form.Label className="create-label-bedrooms">Bedrooms</Form.Label>
+          <Form.Control
+            name="bedrooms"
+            placeholder="Bedrooms"
+            ref={register}
+          />
+          {errors.bedrooms && (
+            <span className="text-danger">{errors.bedrooms.message}</span>
+          )}
+        </Form.Group>
+        </Col>
+        <Col sm={12} md={4}>
+        <Form.Group controlId="createForm.ControlInput5">
+          <Form.Label className="create-label-bathrooms">Bathrooms</Form.Label>
+          <Form.Control
+            name="bathrooms"
+            placeholder="Bathrooms"
+            ref={register}
+          />
+          {errors.bathrooms && (
+            <span className="text-danger">{errors.bathrooms.message}</span>
+          )}
+        </Form.Group>
+        </Col>
+        <Col sm={12} md={4}>
+        <Form.Group controlId="createForm.ControlInput6">
+          <Form.Label className="create-label-size">Size</Form.Label>
+          <Form.Control name="size" placeholder="Size in m2" ref={register} />
+          {errors.size && (
+            <span className="text-danger">{errors.size.message}</span>
+          )}
+        </Form.Group>
+        </Col>
+        </Row>
+        <Row>
+        <Col sm={12} md={4}>
+        <Form.Group controlId="createForm.ControlInput7">
+          <Form.Label className="create-label-feature">Feature one</Form.Label>
+          <Form.Control
+            name="feature_one"
+            placeholder="Wi-Fi/Parking"
+            ref={register}
+          />
+          {errors.feature_one && (
+            <span className="text-danger">{errors.feature_one.message}</span>
+          )}
+        </Form.Group>
+        </Col>
+        <Col sm={12} md={4}>
+        <Form.Group controlId="createForm.ControlInput8">
+          <Form.Label className="create-label-feature">Feature two</Form.Label>
+          <Form.Control
+            name="feature_two"
+            placeholder="Enter feature"
+            ref={register}
+          />
+          {errors.feature_two && (
+            <span className="text-danger">{errors.feature_two.message}</span>
+          )}
+        </Form.Group>
+        </Col>
+        <Col sm={12} md={4}>
+        <Form.Group controlId="createForm.ControlInput9">
+          <Form.Label className="create-label-feature">
+            Feature three
+          </Form.Label>
+          <Form.Control
+            name="feature_three"
+            placeholder="Enter feature"
+            ref={register}
+          />
+          {errors.feature_three && (
+            <span className="text-danger">{errors.feature_three.message}</span>
+          )}
+        </Form.Group>
+        </Col>
+        </Row>
+        <Form.Group controlId="createForm.ControlInput10">
+          <Form.Label className="create-label-price">Price</Form.Label>
+          <Form.Control
+            name="price"
+            placeholder="Price per night (NOK)"
+            ref={register}
+          />
+          {errors.price && (
+            <span className="text-danger">{errors.price.message}</span>
+          )}
+        </Form.Group>
+        <Form.Group controlId="createForm.ControlTextarea1">
+          <Form.Label className="create-label-description">
+            Description
+          </Form.Label>
+          <Form.Control
+            name="description"
+            as="textarea"
+            placeholder="Type description (20 to 100 characters)"
+            rows="5"
+            ref={register}
+          />
+          {errors.description && (
+            <span className="text-danger">{errors.description.message}</span>
+          )}
+        </Form.Group>
         <Button type="submit" className="create-btn-cta">
           Submit
         </Button>
       </Form>
+      </Container>
     </>
   );
 }

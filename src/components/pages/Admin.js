@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Footer from "./../../components/layout/Footer";
 import MessageModal from "./../layout/MessageModal";
 import EnquiryModal from "./../layout/EnquiryModal";
+import CreateAccommodationModal from "./../layout/CreateModal";
 
 export default function Admin() {
   return (
@@ -27,7 +28,7 @@ export default function Admin() {
                   <EnquiryModal />
                 </div>
                 <div className="admin-create-container mt-3">
-                  
+                  <CreateAccommodationModal />
                 </div>
               </div>
             </div>

@@ -60,6 +60,15 @@
     min-width: 180px;
 }
 
+.create-btn-cta {
+    background-color: $primary-cerise;
+    color: $white-color;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
+}
+
 .logout-btn-cta:hover,
 .admin-btn-cta:hover,
 .login-btn-cta:hover,
@@ -69,7 +78,8 @@
 .accommodation-detail-btn:hover,
 .btn-activities-cta:hover,
 .btn-details-cta:hover,
-.btn-modal-cta:hover {
+.btn-modal-cta:hover,
+.create-btn-cta:hover {
     background-color: $cerise-shade1;
     transition-duration: 0.3s;
     transition-timing-function: ease-in;
@@ -138,5 +148,16 @@ button.close {
 button.close:hover {
     color: $primary-cerise;
     transition-delay: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.btn-modal-close.btn.btn-primary {
+    background-color: $primary-jaffa !important;
+    border: none;
+}
+
+.btn-modal-close.btn.btn-primary:hover {
+    background-color: $jaffa-shade1 !important;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in;
 }

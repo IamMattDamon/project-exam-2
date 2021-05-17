@@ -41,14 +41,3 @@
 .messages-card.card {
     border: none;
 }
-
-.btn-modal-close.btn.btn-primary {
-    background-color: $primary-cerise !important;
-    border: none;
-}
-
-.btn-modal-close.btn.btn-primary:hover {
-    background-color: $cerise-shade1 !important;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
-}
