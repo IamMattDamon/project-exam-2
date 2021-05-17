@@ -140,7 +140,7 @@ export default function CreateAccommodationForm() {
         </Col>
         </Row>
         <Row>
-        <Col sm={12} md={4}>
+        <Col sm={12} md={3}>
         <Form.Group controlId="createForm.ControlInput4">
           <Form.Label className="create-label-bedrooms">Bedrooms</Form.Label>
           <Form.Control
@@ -153,7 +153,7 @@ export default function CreateAccommodationForm() {
           )}
         </Form.Group>
         </Col>
-        <Col sm={12} md={4}>
+        <Col sm={12} md={3}>
         <Form.Group controlId="createForm.ControlInput5">
           <Form.Label className="create-label-bathrooms">Bathrooms</Form.Label>
           <Form.Control
@@ -166,12 +166,25 @@ export default function CreateAccommodationForm() {
           )}
         </Form.Group>
         </Col>
-        <Col sm={12} md={4}>
+        <Col sm={12} md={3}>
         <Form.Group controlId="createForm.ControlInput6">
           <Form.Label className="create-label-size">Size</Form.Label>
           <Form.Control name="size" placeholder="Size in m2" ref={register} />
           {errors.size && (
             <span className="text-danger">{errors.size.message}</span>
+          )}
+        </Form.Group>
+        </Col>
+        <Col sm={12} md={3}>
+        <Form.Group controlId="createForm.ControlInput10">
+          <Form.Label className="create-label-price">Price</Form.Label>
+          <Form.Control
+            name="price"
+            placeholder="Per night (NOK)"
+            ref={register}
+          />
+          {errors.price && (
+            <span className="text-danger">{errors.price.message}</span>
           )}
         </Form.Group>
         </Col>
@@ -219,17 +232,6 @@ export default function CreateAccommodationForm() {
         </Form.Group>
         </Col>
         </Row>
-        <Form.Group controlId="createForm.ControlInput10">
-          <Form.Label className="create-label-price">Price</Form.Label>
-          <Form.Control
-            name="price"
-            placeholder="Price per night (NOK)"
-            ref={register}
-          />
-          {errors.price && (
-            <span className="text-danger">{errors.price.message}</span>
-          )}
-        </Form.Group>
         <Form.Group controlId="createForm.ControlTextarea1">
           <Form.Label className="create-label-description">
             Description
