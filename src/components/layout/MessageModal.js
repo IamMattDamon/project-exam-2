@@ -23,7 +23,7 @@ export default function MessageModal() {
         centered
         onHide={handleClose}>
             <Modal.Header closeButton>
-                <Modal.Title>Messages Dashboard</Modal.Title>
+                <Modal.Title>Message Dashboard</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <MessageList />

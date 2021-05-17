@@ -21,36 +21,8 @@
     color: $white-color;
 }
 
-.btn-modal-close.btn.btn-primary {
-    background-color: $primary-cerise !important;
-    border: none;
-}
-
-.btn-modal-close.btn.btn-primary:hover {
-    background-color: $cerise-shade1 !important;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
-}
-
 .card-header.message-dashboard-header {
     padding: .25rem .75rem;
-}
-
-button.message-accordion-activation {
-    background-color: transparent;
-    border-radius: 5px;
-    color: $white-color;
-    font-family: $secondary-font !important;
-    border: none;
-    padding: .25rem .75rem;
-    border: .5px solid $fuchsia-tint1;
-}
-
-button.message-accordion-activation:hover {
-    background-color: $fuchsia-shade1;
-    color: $primary-jaffa;
-    transition-timing-function: ease-in;
-    transition-delay: 0.2s;
 }
 
 .contactform-dashboard-text {
@@ -65,4 +37,42 @@ button.message-accordion-activation:hover {
 
 .messages-card.card {
     border: none;
+}
+
+.btn-modal-close.btn.btn-primary {
+    background-color: $primary-cerise !important;
+    border: none;
+}
+
+.btn-modal-close.btn.btn-primary:hover {
+    background-color: $cerise-shade1 !important;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+button.message-accordion-activation {
+    background-color: transparent;
+    border-radius: 5px;
+    color: $white-color;
+    font-family: $secondary-font !important;
+    padding: .25rem .75rem;
+    border: .5px solid $primary-fuchsia !important;
+}
+
+button.message-accordion-activation:hover {
+    background-color: $fuchsia-shade1;
+    color: $primary-jaffa;
+    transition-timing-function: ease-in;
+    transition-delay: 0.2s;
+}
+
+button.close {
+    color: $white-color;
+    text-shadow: none;
+}
+
+button.close:hover {
+    color: $primary-cerise;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in;
 }
