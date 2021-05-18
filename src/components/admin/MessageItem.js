@@ -26,7 +26,7 @@ function MessageItem({
                     <div className="contactform-dashboard-container container">
                       <div className="contactform-dashboard-content d-flex flex-column justify-content-center px-2 py-2">
                         <div className="contactform-dashboard-time">
-                          <h5 className="contactform-dashboard-text mb-1">Received: {created_at}</h5>
+                          <h5 className="contactform-dashboard-text mb-1">{created_at}</h5>
                         </div>
                         <div className="contactform-dashboard-header">
                           <h5 className="contactform-dashboard-text mb-1">Email: {email}</h5>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import AccommodationItem from "./AccommodationItem";
 import { ACCOMMODATION_URL } from "./../../constants/api";
 import Container from "react-bootstrap/container";
+import Spinner from "react-bootstrap/Spinner";
 
 function AccommodationList() {
   const [accommodations, setAccommodations] = useState([]);
@@ -30,7 +31,11 @@ function AccommodationList() {
   }, []);
 
   if (loading) {
-    return <div className="container font-color-white font-family-secondary">Loading...</div>;
+    return <div className="container">
+             <Spinner animation="border" role="status" className="custom-loading-spinner">
+               <span className="sr-only">Loading...</span>
+             </Spinner>;
+           </div>
   }
 
   if (error) {

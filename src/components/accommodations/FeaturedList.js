@@ -2,47 +2,63 @@ import { useState, useEffect } from "react";
 import FeaturedItem from "./FeaturedItem";
 import { ACCOMMODATION_URL } from "./../../constants/api";
 import Container from "react-bootstrap/Container";
+import Spinner from "react-bootstrap/Spinner";
 
 function FeaturedList() {
-    const [accommodations, setAccommodations] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+  const [accommodations, setAccommodations] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-    useEffect(function () {
-        async function fetchData() {
-          try {
-            const response = await fetch(ACCOMMODATION_URL);
-    
-            if (response.ok) {
-              const json = await response.json();
-              console.log(json);
-              setAccommodations(json);
-            } else {
-              setError("An error has occurred");
-            }
-          } catch (error) {
-            setError(error.toString());
-          } finally {
-            setLoading(false);
-          }
+  useEffect(function () {
+    async function fetchData() {
+      try {
+        const response = await fetch(ACCOMMODATION_URL);
+
+        if (response.ok) {
+          const json = await response.json();
+          console.log(json);
+          setAccommodations(json);
+        } else {
+          setError("An error has occurred");
         }
-        fetchData();
-      }, []);
-      
-      if (loading) {
-        return <div className="container font-color-white font-family-secondary">Loading...</div>;
+      } catch (error) {
+        setError(error.toString());
+      } finally {
+        setLoading(false);
       }
-    
-      if (error) {
-        return <div className="container font-color-white font-family-secondary">An error has occurred: {error}</div>;
-      }
+    }
+    fetchData();
+  }, []);
 
-      return (
-        <>
-        <Container>
-          <div className="featured-list d-flex flex-wrap justify-content-center">
-            {accommodations.map(function (accommodation) {
-              if (accommodation.featured) {
+  if (loading) {
+    return (
+      <div className="container">
+        <Spinner
+          animation="border"
+          role="status"
+          className="custom-loading-spinner"
+        >
+          <span className="sr-only">Loading...</span>
+        </Spinner>
+        ;
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="container font-color-white font-family-secondary">
+        An error has occurred: {error}
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <Container>
+        <div className="featured-list d-flex flex-wrap justify-content-center">
+          {accommodations.map(function (accommodation) {
+            if (accommodation.featured) {
               const {
                 id,
                 name,
@@ -74,12 +90,12 @@ function FeaturedList() {
                   feature_three={feature_three}
                 />
               );
-          }})}
-        
-          </div>
-          </Container>
-          </>
-      );
+            }
+          })}
+        </div>
+      </Container>
+    </>
+  );
 }
 
 export default FeaturedList;

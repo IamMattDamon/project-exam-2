@@ -8,6 +8,7 @@ import Footer from "./../layout/Footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Heading from "./../layout/Heading";
+import Spinner from "react-bootstrap/Spinner";
 
 function ActivitiesDetail() {
   const [activities, setActivities] = useState(null);
@@ -49,8 +50,15 @@ function ActivitiesDetail() {
 
   if (loading) {
     return (
-      <div className="container font-color-white font-family-secondary">
-        Loading...
+      <div className="container">
+        <Spinner
+          animation="border"
+          role="status"
+          className="custom-loading-spinner"
+        >
+          <span className="sr-only">Loading...</span>
+        </Spinner>
+        ;
       </div>
     );
   }

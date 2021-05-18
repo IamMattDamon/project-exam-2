@@ -68,9 +68,7 @@ export default function CreateAccommodationForm() {
   };
 
   async function onSubmit(data) {
-    const token = auth.jwt;
     console.log(data);
-    
     
     let formData = new FormData();
     delete data["image"];
@@ -78,6 +76,7 @@ export default function CreateAccommodationForm() {
     formData.append(`files.image`, file, file.name);
     formData.append("data", JSON.stringify(data));
     
+    const token = auth.jwt;
     setSubmitted(true);
     
     try {

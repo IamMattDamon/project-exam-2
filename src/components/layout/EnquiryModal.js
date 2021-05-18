@@ -27,7 +27,7 @@ export default function EnquiryModal() {
         </Modal.Body>
         <Modal.Footer>
           <Button className="btn-modal-close" onClick={handleClose}>
-            Close window
+            Close
           </Button>
         </Modal.Footer>
       </Modal>

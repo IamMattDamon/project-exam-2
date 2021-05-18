@@ -2,6 +2,7 @@ import { useState, useContext, useEffect } from "react";
 import AuthContext from "./../../context/AuthContext";
 import EnquiryItem from "./EnquiryItem";
 import { ENQUIRY_URL } from "./../../constants/api";
+import Spinner from "react-bootstrap/Spinner";
 
 const url = ENQUIRY_URL;
 
@@ -41,9 +42,11 @@ function EnquiryList() {
 
   if (loading) {
     return (
-      <div className="container font-color-white font-family-secondary">
-        Loading...
-      </div>
+          <div className="container">
+             <Spinner animation="border" role="status" className="custom-loading-spinner">
+               <span className="sr-only">Loading...</span>
+             </Spinner>;
+           </div>
     );
   }
 
