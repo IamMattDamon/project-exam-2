@@ -47,6 +47,7 @@ function AccommodationList() {
     <div className="section-header mt-5">
       <h2 className="font-color-white font-family-primary text-center">Find Accommodations</h2>
     </div>
+    
     <Container>
       <div className="accommodations-list d-flex flex-wrap justify-content-center">
         {accommodations.map(function (accommodation) {
