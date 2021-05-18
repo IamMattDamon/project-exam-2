@@ -19,7 +19,7 @@ export default function CreateAccommodationModal() {
       </Button>
 
       <Modal show={show} size="lg" centered onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title>Create Accommodations</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -27,7 +27,7 @@ export default function CreateAccommodationModal() {
         </Modal.Body>
         <Modal.Footer>
           <Button className="btn-modal-close" onClick={handleClose}>
-            Close window
+            Close
           </Button>
         </Modal.Footer>
       </Modal>

@@ -29,8 +29,8 @@ const schema = yup.object().shape({
     description: yup
     .string()
     .required("Enter description of new accommodation")
-    .min(20, "Description must contain at least 20 characters")
-    .max(100, "Description cannot contain more than 100 characters"),
+    .min(50, "Description must contain at least 50 characters")
+    .max(400, "Description cannot contain more than 400 characters"),
     bedrooms: yup
     .number()
     .required("Enter the amount of bedrooms"),
@@ -64,24 +64,25 @@ export default function CreateAccommodationForm() {
   });
 
   const sortInputChange = (event) => {
-    setFile(event.target.images[0]);
+    setFile(event.target.files[0]);
   };
 
   async function onSubmit(data) {
-    setSubmitted(true);
-    console.log(data);
-
     const token = auth.jwt;
-
+    console.log(data);
+    
+    
     let formData = new FormData();
     delete data["image"];
-
+    
     formData.append(`files.image`, file, file.name);
     formData.append("data", JSON.stringify(data));
-
+    
+    setSubmitted(true);
+    
     try {
       axios.defaults.headers.common = { Authorization: `Bearer ${token}` };
-      const response = await axios.post(url, data);
+      const response = await axios.post(url, formData);
       console.log("response", response.data);
     } catch (error) {
       console.log("error", error);
@@ -169,7 +170,7 @@ export default function CreateAccommodationForm() {
         <Col sm={12} md={3}>
         <Form.Group controlId="createForm.ControlInput6">
           <Form.Label className="create-label-size">Size</Form.Label>
-          <Form.Control name="size" placeholder="Size in m2" ref={register} />
+          <Form.Control name="size" placeholder="Size" ref={register} />
           {errors.size && (
             <span className="text-danger">{errors.size.message}</span>
           )}
@@ -239,7 +240,7 @@ export default function CreateAccommodationForm() {
           <Form.Control
             name="description"
             as="textarea"
-            placeholder="Type description (20 to 100 characters)"
+            placeholder="Type description (50 to 400 characters)"
             rows="5"
             ref={register}
           />
@@ -248,7 +249,7 @@ export default function CreateAccommodationForm() {
           )}
         </Form.Group>
         <Button type="submit" className="create-btn-cta">
-          Submit
+          Submit registration
         </Button>
       </Form>
       </Container>

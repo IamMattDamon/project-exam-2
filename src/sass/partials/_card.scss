@@ -5,11 +5,16 @@
 }
 
 .accommodation-card {
-    width: 302px;
+    width: 300px;
+}
+
+.accommodation-card.card,
+.activities-card.card {
+    border: none;
 }
 
 .activities-card {
-    width: 302px;
+    width: 300px;
 }
 
 .accommodation-title,
