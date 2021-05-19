@@ -21,7 +21,6 @@ export default function Accommodations() {
             </div>
           </Container>
         </div>
-
         <AccommodationList />
       </div>
       <Footer />

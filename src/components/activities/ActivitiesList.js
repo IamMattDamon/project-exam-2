@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import ActivitiesItem from "./ActivitiesItem";
 import { ACTIVITIES_URL } from "./../../constants/api";
 import Container from "react-bootstrap/Container";
+import Spinner from "react-bootstrap/Spinner";
 
 function ActivitiesList() {
   const [activities, setActivities] = useState([]);
@@ -30,8 +31,15 @@ function ActivitiesList() {
 
   if (loading) {
     return (
-      <div className="container font-color-white font-family-secondary">
-        Loading...
+      <div className="container">
+        <Spinner
+          animation="border"
+          role="status"
+          className="custom-loading-spinner"
+        >
+          <span className="sr-only">Loading...</span>
+        </Spinner>
+        ;
       </div>
     );
   }
@@ -49,7 +57,8 @@ function ActivitiesList() {
       <Container>
         <div className="accommodations-list d-flex flex-wrap justify-content-center">
           {activities.map(function (activities) {
-            const { id, name, description_short, description_long, image } = activities;
+            const { id, name, description_short, description_long, image } =
+              activities;
             return (
               <ActivitiesItem
                 key={id}
