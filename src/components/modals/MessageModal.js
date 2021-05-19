@@ -19,7 +19,7 @@ export default function MessageModal() {
         <span className="ml-2">Read messages</span>
       </Button>
 
-      <Modal show={show} size="lg" centered onHide={handleClose}>
+      <Modal animation={false} show={show} size="lg" centered onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Message Dashboard</Modal.Title>
         </Modal.Header>

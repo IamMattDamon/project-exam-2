@@ -18,7 +18,7 @@ export default function CreateAccommodationModal() {
         <span className="ml-2">New accommodation</span>
       </Button>
 
-      <Modal show={show} size="lg" centered onHide={handleClose}>
+      <Modal animation={false} show={show} size="lg" centered onHide={handleClose}>
         <Modal.Header>
           <Modal.Title>Create Accommodations</Modal.Title>
         </Modal.Header>

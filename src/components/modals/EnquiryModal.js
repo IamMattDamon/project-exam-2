@@ -18,7 +18,7 @@ export default function EnquiryModal() {
         <span className="ml-2">Booking enquiries</span>
       </Button>
 
-      <Modal show={show} size="lg" centered onHide={handleClose}>
+      <Modal animation={false} show={show} size="lg" centered onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Enquiries Dashboard</Modal.Title>
         </Modal.Header>
