@@ -1,9 +1,9 @@
 import Heading from "./../layout/Heading";
 import Container from "react-bootstrap/Container";
 import Footer from "./../../components/layout/Footer";
-import MessageModal from "./../layout/MessageModal";
-import EnquiryModal from "./../layout/EnquiryModal";
-import CreateAccommodationModal from "./../layout/CreateModal";
+import MessageModal from "./../modals/MessageModal";
+import EnquiryModal from "./../modals/EnquiryModal";
+import CreateAccommodationModal from "./../modals/CreateModal";
 
 export default function Admin() {
   return (
