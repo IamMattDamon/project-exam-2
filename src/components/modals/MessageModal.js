@@ -1,10 +1,11 @@
 import { useState } from "react";
-import CreateAccommodationForm from "./../admin/CreateAccommodationForm";
+import MessageList from "../admin/MessageList";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-import { MdCreateNewFolder } from "react-icons/md";
+import { HiMail } from "react-icons/hi";
 
-export default function CreateAccommodationModal() {
+
+export default function MessageModal() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -13,17 +14,17 @@ export default function CreateAccommodationModal() {
     <>
       <Button className="btn-modal-cta" onClick={handleShow}>
         <span>
-          <MdCreateNewFolder />
+          <HiMail />
         </span>
-        <span className="ml-2">New accommodation</span>
+        <span className="ml-2">Read messages</span>
       </Button>
 
       <Modal show={show} size="lg" centered onHide={handleClose}>
-        <Modal.Header>
-          <Modal.Title>Create Accommodations</Modal.Title>
+        <Modal.Header closeButton>
+          <Modal.Title>Message Dashboard</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <CreateAccommodationForm />
+          <MessageList />
         </Modal.Body>
         <Modal.Footer>
           <Button className="btn-modal-close" onClick={handleClose}>

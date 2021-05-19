@@ -1,11 +1,10 @@
 import { useState } from "react";
-import MessageList from "./../admin/MessageList";
+import EnquiryList from "../admin/EnquiryList";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-import { HiMail } from "react-icons/hi";
+import { FaBarcode } from "react-icons/fa";
 
-
-export default function MessageModal() {
+export default function EnquiryModal() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -14,17 +13,17 @@ export default function MessageModal() {
     <>
       <Button className="btn-modal-cta" onClick={handleShow}>
         <span>
-          <HiMail />
+          <FaBarcode />
         </span>
-        <span className="ml-2">Read messages</span>
+        <span className="ml-2">Booking enquiries</span>
       </Button>
 
       <Modal show={show} size="lg" centered onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Message Dashboard</Modal.Title>
+          <Modal.Title>Enquiries Dashboard</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <MessageList />
+          <EnquiryList />
         </Modal.Body>
         <Modal.Footer>
           <Button className="btn-modal-close" onClick={handleClose}>
