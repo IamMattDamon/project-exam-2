@@ -2,7 +2,7 @@ import { useState } from "react";
 import EnquiryList from "../admin/EnquiryList";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-import { FaBarcode } from "react-icons/fa";
+import { MdViewList } from "react-icons/md";
 
 export default function EnquiryModal() {
   const [show, setShow] = useState(false);
@@ -13,7 +13,7 @@ export default function EnquiryModal() {
     <>
       <Button className="btn-modal-cta" onClick={handleShow}>
         <span>
-          <FaBarcode />
+          <MdViewList />
         </span>
         <span className="ml-2">Booking enquiries</span>
       </Button>

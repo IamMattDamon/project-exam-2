@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
-import { FaBarcode } from "react-icons/fa";
+import { MdViewList } from "react-icons/md";
+import Moment from "react-moment";
 
 function EnquiryItem({
   created_at,
@@ -21,10 +22,10 @@ function EnquiryItem({
               eventKey="0"
               className="enquiry-accordion-activation"
             >
-              <span className=""><FaBarcode /></span>
+              <span><MdViewList className="mr-1"/></span>
               <span className="ml-2 accordion-toggle-header">
-                {created_at}
-              </span>
+                <Moment format="YYYY-MM-DD, hh:mm">{created_at}</Moment>
+              &nbsp;CET</span>
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
