@@ -1,0 +1,12 @@
+.dropdown-menu {
+    background-color: $nav-background;
+}
+
+.dropdown-item {
+    color: $white-color;
+}
+
+.dropdown-item:hover {
+    background-color: $fuchsia-shade1;
+    color: $white-color;
+}

@@ -1,8 +1,7 @@
 import { useState, Fragment } from "react";
 import { AsyncTypeahead } from "react-bootstrap-typeahead";
-import { useHistory, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { ACCOMMODATION_URL } from "../../constants/api";
-import Spinner from "react-bootstrap/Spinner";
 import Form from "react-bootstrap/Form";
 
 const url = ACCOMMODATION_URL;
@@ -49,17 +48,22 @@ function DropdownSearchList() {
                 placeholder="Search for accommodations"
                 renderMenuItemChildren={(accommodation) => (
                     <Fragment>
+                      <div className="d-flex flex-row align-content-center">
                       <img
                       alt={accommodation.name}
                       src={accommodation.image[0].formats.thumbnail.url}
                       style={{
-                        height: '24px',
-                        marginRight: '10px',
-                        width: '24px',
+                        height: '32px',
+                        marginRight: '5px',
+                        width: '32px',
                         }}
                       />
-                      <div>
+                      <div className="search-content ml-2">
                           <p>{accommodation.name}</p>
+                      </div>
+                      <div className="search-content ml-2">
+                          <p>{accommodation.price} NOK per night</p>
+                      </div>
                       </div>
                     </Fragment>
                 )}

@@ -2,6 +2,7 @@ import Heading from "./../layout/Heading";
 import Container from "react-bootstrap/Container";
 import Footer from "./../layout/Footer";
 import AccommodationList from "./../accommodations/AccommodationList";
+import DropdownSearchList from "./../accommodations/DropdownSearchList";
 
 export default function Accommodations() {
   return (
@@ -18,6 +19,9 @@ export default function Accommodations() {
               <h2 className="accommodations-subheading">
                 Find your place to stay in Bergen
               </h2>
+              <div className="accommodation-searchbar mt-3">
+              <DropdownSearchList />
+            </div>
             </div>
           </Container>
         </div>
