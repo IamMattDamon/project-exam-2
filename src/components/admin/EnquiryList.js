@@ -70,6 +70,7 @@ function EnquiryList() {
             date_of_arrival,
             days,
             people,
+            created_at,
           } = enquiryform;
           return (
             <EnquiryItem
@@ -81,6 +82,7 @@ function EnquiryList() {
               date_of_arrival={date_of_arrival}
               days={days}
               people={people}
+              created_at={created_at}
             />
           );
         })}

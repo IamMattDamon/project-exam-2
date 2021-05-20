@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
-import { BiChevronDownCircle } from "react-icons/bi";
+import { FaBarcode } from "react-icons/fa";
 
 function EnquiryItem({
-  id,
+  created_at,
   full_name,
   email,
   accommodations,
@@ -21,10 +21,9 @@ function EnquiryItem({
               eventKey="0"
               className="enquiry-accordion-activation"
             >
-              <span className="accordion-toggle-header">#{id}</span>
+              <span className=""><FaBarcode /></span>
               <span className="ml-2 accordion-toggle-header">
-                {email}
-                <BiChevronDownCircle className="ml-2" />
+                {created_at}
               </span>
             </Accordion.Toggle>
           </Card.Header>
@@ -32,6 +31,11 @@ function EnquiryItem({
             <Card.Body>
               <div className="enquiryform-dashboard-container container">
                 <div className="enquiryform-dashboard-content d-flex flex-column justify-content-between px-2 py-2">
+                <div className="enquiryform-dashboard-email">
+                    <h5 className="enquiryform-dashboard-text mb-1">
+                      Email: {email}
+                    </h5>
+                  </div>
                   <div className="enquiryform-dashboard-name">
                     <h5 className="enquiryform-dashboard-text mb-1">
                       Name: {full_name}

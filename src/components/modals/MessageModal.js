@@ -16,7 +16,7 @@ export default function MessageModal() {
         <span>
           <HiMail />
         </span>
-        <span className="ml-2">Read messages</span>
+        <span className="ml-2">Admin messages</span>
       </Button>
 
       <Modal animation={false} show={show} size="lg" centered onHide={handleClose}>

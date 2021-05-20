@@ -59,10 +59,10 @@ function DropdownSearchList() {
                         }}
                       />
                       <div className="search-content ml-2">
-                          <p>{accommodation.name}</p>
+                          <p className="mb-0">{accommodation.name}</p>
                       </div>
-                      <div className="search-content ml-2">
-                          <p>{accommodation.price} NOK per night</p>
+                      <div className="search-content search-price-tag ml-2">
+                          <p className="mb-0">{accommodation.price} NOK</p>
                       </div>
                       </div>
                     </Fragment>

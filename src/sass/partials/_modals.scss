@@ -24,6 +24,7 @@
 .card-header.message-dashboard-header,
 .card-header.enquiry-dashboard-header {
     padding: .25rem .75rem;
+    background-color: transparent;
 }
 
 .contactform-dashboard-text,
@@ -40,4 +41,14 @@
 
 .messages-card.card {
     border: none;
+}
+
+.contactform-message-header {
+    color: $white-color;
+    font-size: 16px;
+    font-family: $primary-font;
+}
+
+.enquiries-card.card {
+    border: transparent;
 }
