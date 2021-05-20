@@ -37,7 +37,7 @@
 .admin-content {
     background-image:
     linear-gradient(to bottom, rgba(19, 0, 38, 0.5), rgba(19, 0, 38, 0.5));
-    width: 70%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     border-radius: 10px;

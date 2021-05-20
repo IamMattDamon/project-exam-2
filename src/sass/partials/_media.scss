@@ -84,6 +84,10 @@
         width: 282px !important;
         margin-right: 0 !important;
     }
+    .home-content-container,
+    .home-jumbotron-container {
+        margin-right: 0 !important;
+    }
     
 }
 
@@ -169,8 +173,59 @@
     h2.admin-subheading {
         font-size: 20px !important;
     }
+    h2.content-heading {
+        font-size: 24px !important;
+    }
+
     .admin-content {
         padding: 3rem 2rem !important;
         width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    h1.main-heading {
+        font-size: 24px !important;
+    }
+    h1.jumbotron-heading {
+        font-size: 24px !important;        
+    }
+    p.jumbotron-text {
+        font-size: 14px !important;
+    }
+    .ext-link-a span {
+        font-size: 14px !important;
+    }
+    .jumbotron {
+        padding: 1.5rem 1rem !important;
+    }
+    .mg-top-100 {
+        margin-top: 50px !important;
+    }
+    img.nav-logo {
+        width: 125px !important;
+    }
+    .navbar-toggler {
+        font-size: 1rem !important;
+    }
+    .nav-link {
+        font-size: 14px !important;
+    }
+    .accommodation-title,
+    .activities-title {
+        font-size: 20px;
+    }
+    .accommodation-subtitle,
+    .activities-subtitle {
+        font-size: 18px;
+    }
+    .list-group-item {
+        font-size: 14px !important;
+    }
+    .accommodation-detail-btn {
+        font-size: 14px !important;
+    }
+    .card-body {
+        padding: 0.5rem;
     }
 }

@@ -48,7 +48,7 @@ function DropdownSearchList() {
                 placeholder="Search for accommodations"
                 renderMenuItemChildren={(accommodation) => (
                     <Fragment>
-                      <div className="d-flex flex-row align-content-center">
+                      <div className="d-flex flex-row align-items-center justify-content-between">
                       <img
                       alt={accommodation.name}
                       src={accommodation.image[0].formats.thumbnail.url}
@@ -61,7 +61,7 @@ function DropdownSearchList() {
                       <div className="search-content ml-2">
                           <p className="mb-0">{accommodation.name}</p>
                       </div>
-                      <div className="search-content search-price-tag ml-2">
+                      <div className="search-content search-price-tag text-right">
                           <p className="mb-0">{accommodation.price} NOK</p>
                       </div>
                       </div>

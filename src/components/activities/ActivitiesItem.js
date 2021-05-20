@@ -16,7 +16,7 @@ function ActivitiesItem({ id, name, image }) {
             </Card.Title>
           </Card.Body>
           <Link to={`/activities/${id}`} className="text-center">
-            <Button className="btn-activities-cta btn-lg">More info</Button>
+            <Button className="btn-activities-cta">Read more</Button>
           </Link>
         </Card>
       </div>

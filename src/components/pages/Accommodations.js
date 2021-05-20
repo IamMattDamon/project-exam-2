@@ -20,8 +20,8 @@ export default function Accommodations() {
                 Find your place to stay in Bergen
               </h2>
               <div className="accommodation-searchbar mt-3">
-              <DropdownSearchList />
-            </div>
+                <DropdownSearchList />
+              </div>
             </div>
           </Container>
         </div>

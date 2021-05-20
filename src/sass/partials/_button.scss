@@ -6,7 +6,16 @@
 }
 
 .btn-activities-cta {
-    border: 1px solid $fuchsia-tint3;
+    width: 100%;
+    border: 1px solid $fuchsia-tint1 !important;
+    background-color: transparent;
+}
+
+.btn-activities-cta:hover {
+    background-color: $primary-fuchsia;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in;
+    color: $primary-jaffa;
 }
 
 .btn-home-cta,
