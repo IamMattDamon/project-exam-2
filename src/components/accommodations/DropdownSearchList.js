@@ -1,6 +1,6 @@
 import { useState, Fragment } from "react";
 import { AsyncTypeahead } from "react-bootstrap-typeahead";
-import { Link } from 'react-router-dom';
+import { useHistory, Link } from "react-router-dom";
 import { ACCOMMODATION_URL } from "../../constants/api";
 import Spinner from "react-bootstrap/Spinner";
 import Form from "react-bootstrap/Form";
@@ -11,17 +11,19 @@ function DropdownSearchList() {
     const [options, setOptions] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
+    const history = useHistory();
+
     const handleSearch = (query) => {
         setIsLoading(true);
 
         fetch(`${url}?name_contains=${query}`)
         .then((resp) => resp.json())
-        .then((accommodations) => {
-            console.log(accommodations)
+        .then((options) => {
+            console.log(options);
             
-            const filteredSearch = accommodations.filter(accommodation => {
+            const filteredSearch = options.filter(accommodation => {
                 return accommodation.name.toLowerCase().includes(query)
-            })
+            });
             
             setOptions(filteredSearch);
             setIsLoading(false);
@@ -42,7 +44,7 @@ function DropdownSearchList() {
                 onSearch={handleSearch}                
                 options={options}
                 onChange={(accommodations) => {
-                    window.location = "/accommodations/" + accommodations[0].id
+                    history.push("/accommodations/" + accommodations[0].id);
                 }}
                 placeholder="Search for accommodations"
                 renderMenuItemChildren={(accommodation) => (

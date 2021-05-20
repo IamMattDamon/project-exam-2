@@ -3,6 +3,7 @@ import AccommodationItem from "./AccommodationItem";
 import { ACCOMMODATION_URL } from "./../../constants/api";
 import Container from "react-bootstrap/container";
 import Spinner from "react-bootstrap/Spinner";
+import DropdownSearchList from "./DropdownSearchList";
 
 function AccommodationList() {
   const [accommodations, setAccommodations] = useState([]);
@@ -46,6 +47,7 @@ function AccommodationList() {
     <>
     <div className="section-header mt-5">
       <h2 className="font-color-white font-family-primary text-center">Find Accommodations</h2>
+      <DropdownSearchList />
     </div>
     
     <Container>
