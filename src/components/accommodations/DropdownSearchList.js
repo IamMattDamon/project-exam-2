@@ -39,7 +39,7 @@ function DropdownSearchList() {
                 id="async-example"
                 isLoading={isLoading}
                 labelKey="name"
-                minLength={2}
+                minLength={1}
                 onSearch={handleSearch}                
                 options={options}
                 onChange={(accommodations) => {
