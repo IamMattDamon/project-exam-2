@@ -33,13 +33,19 @@ const schema = yup.object().shape({
     .max(400, "Description cannot contain more than 400 characters"),
     bedrooms: yup
     .number()
-    .required("Enter the amount of bedrooms"),
+    .required("Enter the amount of bedrooms")
+    .integer("Must be a whole number")
+    .typeError("Must be a whole number"),
     bathrooms: yup
     .number()
-    .required("Enter the amount of bathrooms"),
+    .required("Enter the amount of bathrooms")
+    .integer("Must be a whole number")
+    .typeError("Must be a whole number"),
     size: yup
     .number()
-    .required("Enter the size of the accommodations (m2)"),
+    .required("Enter the size of the accommodations (m2)")
+    .integer("Must be a whole number")
+    .typeError("Must be a whole number"),
     feature_one: yup
     .string()
     .required("Enter feature number one, i.e Wi-Fi"),
@@ -51,7 +57,9 @@ const schema = yup.object().shape({
     .required("Enter feature number three, i.e swimming pool"),
     price: yup
     .number()
-    .required("Enter cost per night (currency NOK)"),
+    .required("Enter cost per night (currency NOK)")
+    .integer("Must be a whole number")
+    .typeError("Must be a whole number"),
 });
 
 export default function CreateAccommodationForm() {

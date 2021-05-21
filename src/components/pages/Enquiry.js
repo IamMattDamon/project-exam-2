@@ -29,13 +29,19 @@ const schema = yup.object().shape({
   date_of_arrival: yup
   .number()
   .required("Enter date of arrival in this format ddmmyyyy")
-  .min(8, "Date format needs to be at least 8 figures ddmmyyyy"),
+  .min(8, "Date format needs to be at least 8 figures ddmmyyyy")
+  .integer("Must be a whole number")
+  .typeError("Must be a whole number"),
   days: yup
   .number()
-  .required("Enter the amount of days you intend to stay at the location"),
+  .required("Enter the amount of days you intend to stay at the location")
+  .integer("Must be a whole number")
+  .typeError("Must be a whole number"),
   people: yup
     .number()
-    .required("Enter the amount of people in your company"),
+    .required("Enter the amount of people in your company")
+    .integer("Must be a whole number")
+    .typeError("Must be a whole number"),
 });
 
 export default function Enquiry({ enquiryData }) {
