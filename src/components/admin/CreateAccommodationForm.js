@@ -21,7 +21,7 @@ const schema = yup.object().shape({
     .min(3, "Accommodation name must be at least 3 characters"),
     type: yup
     .string()
-    .required("Enter accommodation type e.g cabin or penthouse")
+    .required("Enter accommodation type e.g Cabin")
     .min(4, "Type must be at least 4 characters long"),
     image: yup
     .mixed()
