@@ -57,13 +57,6 @@
 .accommodation-detail-description,
 .activities-detail-description {
     background-color: $fuchsia-black-color;
-    border-radius: 0 0 10px 10px;
-}
-
-p.accommodation-detail-text,
-p.activities-detail-text,
-h3.activities-title {
-    color: $white-color;
 }
 
 .dark-bg {
@@ -92,7 +85,7 @@ h3.activities-title {
 
 .accommodation-detail-description,
 .activities-detail-description {
-    width: 500px;
+   max-width: 500px;
 }
 
 .accommodation-detail-container {

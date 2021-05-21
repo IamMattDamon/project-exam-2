@@ -92,7 +92,7 @@ function ActivitiesDetail() {
         <Container className="activities-detail-container">
           <Card className="activities-detail-card">
             <Row className="p-4">
-              <div className="col mt-2 d-flex flex-column justify-content-center activities-detail">
+              <div className="col mt-2 d-flex flex-column justify-content-center activities-detail-firstcol">
                 <div className="activities-detail-img-container">
                   <img
                     src={activities.image.url}
@@ -106,7 +106,7 @@ function ActivitiesDetail() {
                   </p>
                 </div>
               </div>
-              <div className="col">
+              <div className="col activities-detail-secondcol">
                 <Card.Body className="d-flex flex-column justify-content-center activities-detail-body">
                   <Card.Title className="mb-1 text-center d-flex">
                     <h3 className="activities-detail-title">{activities.name}</h3>

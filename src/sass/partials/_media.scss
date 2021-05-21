@@ -49,6 +49,21 @@
     .admin-link {
         margin-right: 0 !important;
     }
+
+    .accommodation-detail-image,
+    .activities-detail-image {
+        min-width: 100%;
+    }
+    .accommodation-detail-firstcol,
+    .activities-detail-firstcol {
+        margin-bottom: 10px !important;
+    }
+    .accommodation-detail-description,
+    .accommodation-detail-img-container,
+    .activities-detail-description,
+    .activities-detail-img-container {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -81,6 +96,11 @@
     .home-content-container,
     .home-jumbotron-container {
         margin-right: 0 !important;
+    }
+    .accommodation-detail-image,
+    .activities-detail-image {
+        width: auto;
+        height: 300px;
     }
     
 }
@@ -177,6 +197,12 @@
         display: block !important;
         padding-top: 100px !important;
     }
+    .accommodation-detail-image,
+    .activities-detail-image {
+        width: auto;
+        height: 250px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -208,6 +234,11 @@
     .btn-modal-cta {
         font-size: 14px !important;
         min-width: 180px !important;
+    }
+    .accommodation-detail-image,
+    .activities-detail-image {
+        width: auto;
+        height: 180px;
     }
 
 }
@@ -263,4 +294,36 @@
         padding-top: 2rem !important;
         padding-bottom: 2rem !important;
     }
+
+    .accommodation-detail-image,
+    .activities-detail-image {
+        width: auto;
+        height: 150px;
+    }
+    p.accommodation-detail-text,
+    p.activities-detail-text {
+        font-size: 14px;
+    }
+    h2.accommodation-detail-title,
+    h2.activities-detail-title {
+        font-size: 20px;
+    }
+    h3.accommodations-subheading,
+    h3.activities-subheading {
+        font-size: 16px;
+    }
+    h3.accommodation-detail-subtitle,
+    h3.activities-detail-subtitle {
+        font-size: 18px;
+    }
+    li.list-group-item {
+        font-size: 14px !important;
+    }
+    .btn-details-cta {
+        font-size: 14px;
+    }
+    .back-to-link {
+        font-size: 14px;
+    }
+
 }
