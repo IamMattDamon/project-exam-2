@@ -17,18 +17,18 @@ const url = ACCOMMODATION_URL;
 const schema = yup.object().shape({
     name: yup
     .string()
-    .required("Enter name/address of the accommodation")
+    .required("Enter name or address e.g Maribakken 15")
     .min(3, "Accommodation name must be at least 3 characters"),
     type: yup
     .string()
-    .required("Enter accommodation type, i.e cabin or penthouse")
+    .required("Enter accommodation type e.g cabin or penthouse")
     .min(4, "Type must be at least 4 characters long"),
     image: yup
     .mixed()
     .test("imageUploaded", "Upload a JPEG file to continue", (value) => !!value.length),
     description: yup
     .string()
-    .required("Enter description of new accommodation")
+    .required("Enter a description 50-400 characters")
     .min(50, "Description must contain at least 50 characters")
     .max(400, "Description cannot contain more than 400 characters"),
     bedrooms: yup
@@ -43,21 +43,21 @@ const schema = yup.object().shape({
     .typeError("Must be a whole number"),
     size: yup
     .number()
-    .required("Enter the size of the accommodations (m2)")
+    .required("Enter size of accommodation (m2)")
     .integer("Must be a whole number")
     .typeError("Must be a whole number"),
     feature_one: yup
     .string()
-    .required("Enter feature number one, i.e Wi-Fi"),
+    .required("Enter feature e.g Wi-Fi"),
     feature_two: yup
     .string()
-    .required("Enter feature number two, i.e parking"),
+    .required("Enter feature e.g parking"),
     feature_three: yup
     .string()
-    .required("Enter feature number three, i.e swimming pool"),
+    .required("Enter feature e.g luxorious"),
     price: yup
     .number()
-    .required("Enter cost per night (currency NOK)")
+    .required("Enter cost per night in NOK")
     .integer("Must be a whole number")
     .typeError("Must be a whole number"),
 });

@@ -34,12 +34,12 @@ const schema = yup.object().shape({
   .typeError("Must be a whole number"),
   days: yup
   .number()
-  .required("Enter the amount of days you intend to stay at the location")
+  .required("Enter the amount of days")
   .integer("Must be a whole number")
   .typeError("Must be a whole number"),
   people: yup
     .number()
-    .required("Enter the amount of people in your company")
+    .required("Enter the amount of people")
     .integer("Must be a whole number")
     .typeError("Must be a whole number"),
 });
