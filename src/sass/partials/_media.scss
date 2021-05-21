@@ -39,10 +39,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    .accommodation-card,
-    .activities-card {
-        margin-right: 1.5rem !important;
-    }
     .admin-links-container {
         flex-direction: column !important;
     }
@@ -323,6 +319,9 @@
         font-size: 14px;
     }
     .back-to-link {
+        font-size: 14px;
+    }
+    .logout-btn-cta {
         font-size: 14px;
     }
 

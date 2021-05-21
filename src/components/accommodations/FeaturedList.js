@@ -55,7 +55,7 @@ function FeaturedList() {
 
   return (
     <>
-      <Container>
+      <Container className="mt-4">
         <div className="featured-list d-flex flex-wrap justify-content-center">
           {accommodations.map(function (accommodation) {
             if (accommodation.featured) {

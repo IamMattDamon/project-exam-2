@@ -45,7 +45,8 @@ function AccommodationList() {
   return (
     <>
     <div className="section-header mt-5">
-      <h2 className="font-color-white font-family-primary text-center">Find Accommodations</h2>
+      <h2 className="content-heading text-center">Holidaze Accommodations</h2>
+      <h3 className="content-subheading text-center">Locate your place to stay</h3>
     </div>
     
     <Container>
