@@ -50,6 +50,7 @@ function DropdownSearchList() {
             <Fragment>
               <div className="d-flex flex-row align-items-center justify-content-between">
                 <img
+                  className="search-list-image"
                   alt={accommodation.name}
                   src={accommodation.image[0].formats.thumbnail.url}
                   style={{
