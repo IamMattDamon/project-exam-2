@@ -7,70 +7,70 @@ import Form from "react-bootstrap/Form";
 const url = ACCOMMODATION_URL;
 
 function DropdownSearchList() {
-    const [options, setOptions] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
+  const [options, setOptions] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
-    const history = useHistory();
+  const history = useHistory();
 
-    const handleSearch = (query) => {
-        setIsLoading(true);
+  const handleSearch = (query) => {
+    setIsLoading(true);
 
-        fetch(`${url}?name_contains=${query}`)
-        .then((resp) => resp.json())
-        .then((options) => {
-            console.log(options);
-            
-            const filteredSearch = options.filter(accommodation => {
-                return accommodation.name.toLowerCase().includes(query)
-            });
-            
-            setOptions(filteredSearch);
-            setIsLoading(false);
+    fetch(`${url}?name_contains=${query}`)
+      .then((resp) => resp.json())
+      .then((options) => {
+        console.log(options);
+
+        const filteredSearch = options.filter((accommodation) => {
+          return accommodation.name.toLowerCase().includes(query);
         });
-    };
 
-    const filterBy = () => true;
+        setOptions(filteredSearch);
+        setIsLoading(false);
+      });
+  };
 
-    return (
-        <>
-        <Form className="accommodations-search-form">
-            <AsyncTypeahead
-                filterBy={filterBy}
-                id="async-example"
-                isLoading={isLoading}
-                labelKey="name"
-                minLength={1}
-                onSearch={handleSearch}                
-                options={options}
-                onChange={(accommodations) => {
-                    history.push("/accommodations/" + accommodations[0].id);
-                }}
-                placeholder="Search for accommodations"
-                renderMenuItemChildren={(accommodation) => (
-                    <Fragment>
-                      <div className="d-flex flex-row align-items-center justify-content-between">
-                      <img
-                      alt={accommodation.name}
-                      src={accommodation.image[0].formats.thumbnail.url}
-                      style={{
-                        height: '32px',
-                        marginRight: '5px',
-                        width: '32px',
-                        }}
-                      />
-                      <div className="search-content ml-2">
-                          <p className="mb-0">{accommodation.name}</p>
-                      </div>
-                      <div className="search-content search-price-tag text-right">
-                          <p className="mb-0">{accommodation.price} NOK</p>
-                      </div>
-                      </div>
-                    </Fragment>
-                )}
+  const filterBy = () => true;
+
+  return (
+    <>
+      <Form className="accommodations-search-form">
+        <AsyncTypeahead
+          filterBy={filterBy}
+          id="async-example"
+          isLoading={isLoading}
+          labelKey="name"
+          minLength={1}
+          onSearch={handleSearch}
+          options={options}
+          onChange={(accommodations) => {
+            history.push("/accommodations/" + accommodations[0].id);
+          }}
+          placeholder="Search for accommodations"
+          renderMenuItemChildren={(accommodation) => (
+            <Fragment>
+              <div className="d-flex flex-row align-items-center justify-content-between">
+                <img
+                  alt={accommodation.name}
+                  src={accommodation.image[0].formats.thumbnail.url}
+                  style={{
+                    height: "32px",
+                    marginRight: "5px",
+                    width: "32px",
+                  }}
                 />
-        </Form>
-        </>
-    );
-};
+                <div className="search-content ml-2">
+                  <p className="mb-0">{accommodation.name}</p>
+                </div>
+                <div className="search-content search-price-tag text-right">
+                  <p className="mb-0">{accommodation.price} NOK</p>
+                </div>
+              </div>
+            </Fragment>
+          )}
+        />
+      </Form>
+    </>
+  );
+}
 
 export default DropdownSearchList;
