@@ -5,6 +5,7 @@ import { MdViewList } from "react-icons/md";
 import Moment from "react-moment";
 
 function EnquiryItem({
+  id,
   created_at,
   full_name,
   email,
@@ -32,6 +33,11 @@ function EnquiryItem({
             <Card.Body>
               <div className="enquiryform-dashboard-container container">
                 <div className="enquiryform-dashboard-content d-flex flex-column justify-content-between px-2 py-2">
+                <div className="enquiryform-dashboard-id">
+                  <h4 className="enquiryform-dashboard-header mb-3">
+                    Booking ID#{id}
+                  </h4>
+                </div>
                 <div className="enquiryform-dashboard-email">
                     <h5 className="enquiryform-dashboard-text mb-1">
                       Email: {email}
