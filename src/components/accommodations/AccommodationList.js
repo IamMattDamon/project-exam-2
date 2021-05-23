@@ -44,7 +44,7 @@ function AccommodationList() {
 
   return (
     <>
-    <div className="section-header mt-5">
+    <div className="accommodations-header-section">
       <h2 className="content-heading text-center">Holidaze Accommodations</h2>
       <h3 className="content-subheading text-center">Locate your place to stay</h3>
     </div>
