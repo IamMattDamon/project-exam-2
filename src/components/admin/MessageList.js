@@ -2,13 +2,11 @@ import { useState, useContext, useEffect } from "react";
 import AuthContext from "./../../context/AuthContext";
 import MessageItem from "./MessageItem";
 import { CONTACT_URL } from "../../constants/api";
-import Spinner from "react-bootstrap/Spinner";
 
 const url = CONTACT_URL;
 
 function MessageList() {
   const [contactforms, setContactforms] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [auth] = useContext(AuthContext);
 
@@ -33,27 +31,11 @@ function MessageList() {
         }
       } catch (error) {
         setError(error.toString());
-      } finally {
-        setLoading(false);
-      }
     }
-    fetchData();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="container">
-        <Spinner
-          animation="border"
-          role="status"
-          className="custom-loading-spinner"
-        >
-          <span className="sr-only">Loading...</span>
-        </Spinner>
-        ;
-      </div>
-    );
   }
+    fetchData();
+    setInterval(fetchData, 60000);
+  }, []);
 
   if (error) {
     return (

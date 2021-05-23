@@ -2,13 +2,11 @@ import { useState, useContext, useEffect } from "react";
 import AuthContext from "./../../context/AuthContext";
 import EnquiryItem from "./EnquiryItem";
 import { ENQUIRY_URL } from "./../../constants/api";
-import Spinner from "react-bootstrap/Spinner";
 
 const url = ENQUIRY_URL;
 
 function EnquiryList() {
   const [enquiryforms, setEnquiryforms] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [auth] = useContext(AuthContext);
 
@@ -33,22 +31,11 @@ function EnquiryList() {
         }
       } catch (error) {
         setError(error.toString());
-      } finally {
-        setLoading(false);
       }
     }
     fetchData();
+    setInterval(fetchData, 60000);
   }, []);
-
-  if (loading) {
-    return (
-          <div className="container">
-             <Spinner animation="border" role="status" className="custom-loading-spinner">
-               <span className="sr-only">Loading...</span>
-             </Spinner>;
-           </div>
-    );
-  }
 
   if (error) {
     return (
