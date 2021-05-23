@@ -21,7 +21,7 @@ function DropdownSearchList() {
         console.log(options);
 
         const filteredSearch = options.filter((accommodation) => {
-          return accommodation.name.toLowerCase().includes(query);
+          return accommodation.name.toLowerCase().includes(query.toLowerCase());
         });
 
         setOptions(filteredSearch);
