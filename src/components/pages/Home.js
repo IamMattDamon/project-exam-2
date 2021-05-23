@@ -33,7 +33,7 @@ export default function Home() {
         </div>
         <Container>
           <main>
-            <section className="mt-5">
+            <section className="home-featured-section">
               <div className="home-content-container">
                 <h2 className="content-heading mb-2 text-center">
                   Top Rated Accommodations
@@ -56,7 +56,7 @@ export default function Home() {
               </div>
             </section>
 
-            <section className="mt-5">
+            <section className="home-jumbotron-section">
                 <Container className="home-jumbotron-container mr-5">
                   <Jumbotron>
                   <h1 className="text-center jumbotron-heading mb-2">The Bergen Card</h1>
@@ -80,7 +80,7 @@ export default function Home() {
                 </Container>
             </section>
 
-            <section className="mt-5">
+            <section className="home-transport-section">
               <div className="home-content-container mb-5 mr-5">
                 <h2 className="content-heading text-center">
                   Public Transport in Bergen
